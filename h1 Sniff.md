@@ -41,6 +41,9 @@ Yleiset network interface nimet
 - Voi katsoa omat nimensä
 * Lisää aiheesta: https://wiki.debian.org/NetworkInterfaceNames, https://www.freedesktop.org/software/systemd/man/latest/systemd.net-naming-scheme.html
 
+## a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
+
+
 
 
 
