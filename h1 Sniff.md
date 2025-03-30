@@ -47,6 +47,24 @@ Yleiset network interface nimet
 - Latasin kaksi eri isoa, mutta tätä päädyin käyttämään ![image](https://github.com/user-attachments/assets/fa98f291-8902-4303-8560-81195cdaab85)
 - Asennuksessa ei ongelmia
 
+## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden
+
+- Voidaan nyt kokeilla ensin, että kaikki toimii. Tuossa -c ja 5 tarkoittaa siis sitä, että se tekee pingin 5-kertaa ja lopettaa, jotta ei tarvitse montaa minuuttia odotella
+![image](https://github.com/user-attachments/assets/2478af21-f765-4f06-947f-98014e062c15)
+- Kaikessa yksinkertaisuudessaan navigoidaan tohon (tai mennään asetusten kautta), mutta koska kaikki on yhden klikkauksen päässä, se mielestäni on ajanhukkaa
+- Klikataan Disconnect ![image](https://github.com/user-attachments/assets/6c241b07-8bcd-46ea-a9bc-adc93177ae8d)
+- Nyt pitäisi olla kaikki pois. Voidaan varmistaa se pingaamalla, jolloin Googlen nimipalvelimiin ei saa yhteyttä
+- ![image](https://github.com/user-attachments/assets/16758cb7-2585-4400-becb-c019c2347ad7)
+- Ja avaamalla varuiksi vielä FireFox ja yrittämällä avaamata sillä jokin sivu
+
+![image](https://github.com/user-attachments/assets/a62e81f6-f751-4429-89a7-82a94710fa18)
+
+- Kaikki siis ok. Palautuu samalla taktiikalla, eli klikataan portin kuvasta - valitaan oikea yhteys
+- ![image](https://github.com/user-attachments/assets/c750cc53-570c-4e2a-bd8f-0a63b195adaf)
+- Voidaan vielä varmistaa, että pystytään surffailemaan kalakuvia
+- ![image](https://github.com/user-attachments/assets/0de6e555-e857-4162-9880-0db9cd3eca02)
+
+
 
 
 
