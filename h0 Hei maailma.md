@@ -22,7 +22,7 @@ x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokon
 - ```wireshark```
 - Voi tallentaa ja ladata myöhemmin tarkastelua varten
 *Filtterit*
-  - Voi lisätä filttereitä lähempää tarkastelua varten ja niitä voi myös yhdistää, esim "tcp and ip.addr == <ip-osoite>", jotta näkee vain haluamansa liikenteen
+  - Voi lisätä filttereitä lähempää tarkastelua varten ja niitä voi myös yhdistää, esim "tcp and ip.addr == < ip-osoite >", jotta näkee vain haluamansa liikenteen
 - Oikeeklikkaus - "Follow: TCP Stream" - salaamattoman liikenteen lukemista tekstinä
 ## Karvinen 2025: Network Interface Names on Linux https://terokarvinen.com/network-interface-linux/
 
