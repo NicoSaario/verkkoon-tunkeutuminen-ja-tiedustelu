@@ -71,6 +71,7 @@ Yleiset network interface nimet
 - ```whoami``` ahven ```sudo adduser ahven wireshark``` ```newgrp wireshark``` ```wireshark```
 - Käytännössä täysin siis Teron ohjeiden mukaan. Tässä ei kuitenkaan kysytty tuota ei sudojen osallisuutta pakettien kaappaamiseen.
 - ![image](https://github.com/user-attachments/assets/b02a93e8-f45c-4e9d-a2e1-a95d954419c5)
+- Tähän väliin pitää mainita, että GUI näyttää laatikoita sen takia, että painoin "cancel" päivitysten kohdalla, kun piti valita character - set. Korjasin tämän kuitenkin hakemalla ```sudo apt-get upgrade``` ja käyttämällä kohtaa "Get recommended"... tai jotain siihen suuntaan. Viimeinen kohta kuitenkin. Nyt numerot ym. näkyy normaalisti.
 - Valitaan tuo eth0
 - Sen voi myös tarkistaa ```ip a``` - komennolla, josta näkyy sen olevan aktiivisessa käytössä
 - ![image](https://github.com/user-attachments/assets/78c1ac62-283c-40ee-9442-842ac21f7be8)
