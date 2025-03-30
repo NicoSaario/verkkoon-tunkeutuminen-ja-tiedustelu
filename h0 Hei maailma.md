@@ -18,8 +18,7 @@ x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokon
 - "Should non-superusers be able to capture packets - yes" - Käsittääkseni kuitenkin se voi tuoda haavoittuvuuksia, jos esimerkiksi yritysverkossa tavallinen käyttäjäjä pystyisi salakuunnella liikennettä
 - Itsellekin muistiin kelloasetukset ```sudo timedatectl set-time "2025-03-30 21:06"```
 - ```sudo adduser <nimi> wireshark``` - Lisätään sniffigrouppiin
-- ```newgrp wireshark```
-- ```wireshark```
+- Jotta ei tarvitse kirjautua ulos saadakseen muutokset voimaan, laiskojen tapa avata uusi shelli ```newgrp wireshark``` ```wireshark```
 - Voi tallentaa ja ladata myöhemmin tarkastelua varten
 *Filtterit*
   - Voi lisätä filttereitä lähempää tarkastelua varten ja niitä voi myös yhdistää, esim "tcp and ip.addr == < ip-osoite >", jotta näkee vain haluamansa liikenteen
