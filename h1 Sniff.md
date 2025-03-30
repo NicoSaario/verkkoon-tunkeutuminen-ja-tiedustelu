@@ -85,9 +85,35 @@ Yleiset network interface nimet
 - Alhaalta (4. oranssi) näkyy maalatun paketin tiedot - Frame kohta näyttää, kuinka iso paketti on, Ethernet 2 verkkoliikenteen lähdöstä loppuun, IPv4 - versio, UDP jossa mukana mm. lähde- ja kohdeportit sekä DNS. Jokaista kohtaa pystyy tutkimaan tarkemmin, jota teemme myöhemmin.
 - ![image](https://github.com/user-attachments/assets/beff6ad7-846b-44dc-b4c6-b46391c31367)
 
+## d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Voit selityksen tueksi laatikoida ne ruutukaappauksesta.
 
+- Wiresharkilla on oma kiva työkalunsa tähän avuksi, joka visualisoi protokollien ja liikenteen sisältöä. Kokeilin tätä toisella kurssilla, kun leikin Wiresharkin kanssa -> Edit -> Preferences -> Layout -> Haluamaan paikkaan "Packet Diagram" -> Apply. Toki se on vain visuaalinen työkalu ja auttaa hahmottamaan eri osia ja itse malli pitää tietää.
 
+- ![image](https://github.com/user-attachments/assets/59035004-bf6e-47fc-8581-e7b3237891db)
 
+- 1. Linkkikerros (Link layer -> ARP, Tunnels, PPP, MAC, jne) 
+  ![image](https://github.com/user-attachments/assets/20c358db-457e-415b-879f-5dbc3ad1ee7a)
+
+- Käytännössä koko Ethernet II koostaa linkkikerroksen. Siinä näkyy MAC - lähettäjä sekä kohdeosoitteet ja tyypin datalle, missä se lähetetään, eli tässä tapauksessa IPv4
+
+- 2. Internet - kerros (Internet layer -> IP, ICMP, NDP, ECN, IPsec jne)
+
+![image](https://github.com/user-attachments/assets/4a18b4fa-11ca-4a70-a1ec-c2ed0f202b34)
+
+- Internet - kerros käsittää tässä tapauksessa kohdan Internet Protocol Version 4, jossa jälleen näkyy kohde sekä lähdeosoitteet IPv4 - muodossa. Siitä näkyy versio, pituus, TTL eli kauanko paketilla kesti päästä "verkon yli" reitittimen sisältä ja Header Lenght, joka määrittää otsikon pituuden. Protokollana tässä tapauksessa TCP
+
+- 3. Kuljetuskerros (Transport layer -> TCP, UDP, DCCP, SCTP, RSVP, QUIC jne)
+
+- ![image](https://github.com/user-attachments/assets/0575af3d-7fc4-4135-9446-e8fb7a7b093b)
+
+- Kuljetuskerroksessa Transmission Control Protocol näkyy portit sekä lähettäjälle että vastaanottavalle osapuolelle. Siinä varmistuu, että paketti on järjestyksessä, koossa, vähillä erroreilla.
+
+- 4. Sovelluskerros (Application layer -> HTTP, FTP, HTTPS, IMAP, SSH, Telnet jne)
+
+- ![image](https://github.com/user-attachments/assets/cf45be9f-7f05-4365-b816-018f44276568)
+
+- Valitsin tähän tehtävään juuri sen, jossa konkreettisesti näkyy HTTP:n toiminta. Eli siinä näkyy se, mitä haetaan, miten haetaan, versio, host, josta haetaan, kielet, mitä sille tehdään (keep-alive) ja lopussa mm. koko pyynnön URL, jota seuraamalla saa hienon onnistumis - viestin
+- ![image](https://github.com/user-attachments/assets/a54ff5a6-057f-4ad9-b960-1280dfe82053)
 
 
 
@@ -107,5 +133,6 @@ Yleiset network interface nimet
 ### Lähteet
 Wireshark - Getting Started, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/wireshark-getting-started/, Luettu 30/03/2025
 Network Interface Names on Linux, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/network-interface-linux/, Luettu 30/03/2025
+Internet Protocol Suite, wikipedia (edit 21/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Internet_protocol_suite, Luettu 30/30/2025
 
 
