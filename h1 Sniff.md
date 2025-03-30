@@ -75,7 +75,14 @@ Yleiset network interface nimet
 - Sen voi myös tarkistaa ```ip a``` - komennolla, josta näkyy sen olevan aktiivisessa käytössä
 - ![image](https://github.com/user-attachments/assets/78c1ac62-283c-40ee-9442-842ac21f7be8)
 
-- Toimiiko nyt?
+- Avasin selaimen ja hain siihen duckduckgo - hakukoneen. Capture on siis ajalta, kunnes ankka oli avattuna.
+
+![image](https://github.com/user-attachments/assets/a9fb78da-25ea-4762-861c-66745dd554f1)
+
+- Tässä heti aluksi 1 - kohdassa käsittääkseni 10.0.2.15 eli Kali yrittää selvittää MAC - osoitteen, joka kuuluu 10.0.2.3. 10.0.2.3 on mitä ilmeisemmin VirtualBoxin
+- Kohdassa 2 kysely Mozillalle
+- Kohdassa 3 ankalle
+- Kohdassa 4 VBoxin NAT - reitittimen, jotta se voi kommunikoida ulkopuolelle
 
 
 
