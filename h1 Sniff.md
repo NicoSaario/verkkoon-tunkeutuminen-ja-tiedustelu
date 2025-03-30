@@ -43,6 +43,9 @@ Yleiset network interface nimet
 
 ## a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
 
+- Asentelin Kalin täältä https://www.kali.org/get-kali/#kali-live
+- Latasin kaksi eri isoa, mutta tätä päädyin käyttämään ![image](https://github.com/user-attachments/assets/fa98f291-8902-4303-8560-81195cdaab85)
+- Asennuksessa ei ongelmia
 
 
 
