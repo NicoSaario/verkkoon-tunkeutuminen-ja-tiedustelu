@@ -1,4 +1,4 @@
-Kotitehtävät
+# Kotitehtävät
 
 Kotitehtävät ovat kurssilta "Verkkoon Tunkeutuminen ja Tiedustelu - Network Attacks and Reconnaissance" ja löytyvät osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#verkkojen-perusteet 
 
@@ -78,7 +78,14 @@ Yleiset network interface nimet
 
 - Avasin selaimen ja hain siihen duckduckgo - hakukoneen. Capture on siis ajalta, kunnes ankka oli avattuna.
 - Ensin näkyy ne, montako pakettia Wireshark kerkesi nappaamaan ennen pysäytystä: ![image](https://github.com/user-attachments/assets/58c8b52a-84cd-4a8c-89cc-4f05bee8d544)
-- 
+  
+- Tässä kohdassa filtteröin pelkän dns - kohdan (1. vaaleanruskea), jossa jokainen rivi on oma DNS- kyselynsä tai vastaus.
+- Firefoxin toiminta käynnistyessä (2. sininen). Se tekee DNS - kyselyitä eri Mozillan palveluihin.
+-  Tämän jälkeen duckduckgo.com (3. vihreä) sivuston aukeaminen ja parannus sekä siihen liittyvät muut kyselyt. Oletan, että jos "ankka" olisi selaimena, se tekisi lähes yhtä monta DNS - kyselyä, mutta pelkkänä hakukoneena tulos on aika suppea
+- Alhaalta (4. oranssi) näkyy maalatun paketin tiedot - Frame kohta näyttää, kuinka iso paketti on, Ethernet 2 verkkoliikenteen lähdöstä loppuun, IPv4 - versio, UDP jossa mukana mm. lähde- ja kohdeportit sekä DNS.
+- ![image](https://github.com/user-attachments/assets/beff6ad7-846b-44dc-b4c6-b46391c31367)
+
+
 
 
 
