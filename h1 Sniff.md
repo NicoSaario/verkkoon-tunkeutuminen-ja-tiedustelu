@@ -82,7 +82,7 @@ Yleiset network interface nimet
 - Tässä kohdassa filtteröin pelkän dns - kohdan (1. vaaleanruskea), jossa jokainen rivi on oma DNS- kyselynsä tai vastaus.
 - Firefoxin toiminta käynnistyessä (2. sininen). Se tekee DNS - kyselyitä eri Mozillan palveluihin.
 -  Tämän jälkeen duckduckgo.com (3. vihreä) sivuston aukeaminen ja parannus sekä siihen liittyvät muut kyselyt. Oletan, että jos "ankka" olisi selaimena, se tekisi lähes yhtä monta DNS - kyselyä, mutta pelkkänä hakukoneena tulos on aika suppea
-- Alhaalta (4. oranssi) näkyy maalatun paketin tiedot - Frame kohta näyttää, kuinka iso paketti on, Ethernet 2 verkkoliikenteen lähdöstä loppuun, IPv4 - versio, UDP jossa mukana mm. lähde- ja kohdeportit sekä DNS.
+- Alhaalta (4. oranssi) näkyy maalatun paketin tiedot - Frame kohta näyttää, kuinka iso paketti on, Ethernet 2 verkkoliikenteen lähdöstä loppuun, IPv4 - versio, UDP jossa mukana mm. lähde- ja kohdeportit sekä DNS. Jokaista kohtaa pystyy tutkimaan tarkemmin, jota teemme myöhemmin.
 - ![image](https://github.com/user-attachments/assets/beff6ad7-846b-44dc-b4c6-b46391c31367)
 
 
