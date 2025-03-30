@@ -65,7 +65,15 @@ Yleiset network interface nimet
 - ![image](https://github.com/user-attachments/assets/0de6e555-e857-4162-9880-0db9cd3eca02)
 
 
+## c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. (Vain omaa liikennettäsi. Voit käyttää tähän esimerkiksi virtuaalikonetta).
 
+- Kaikki alkaa ```sudo apt-get install wireshark```
+- ```whoami``` ahven ```sudo adduser ahven wireshark``` ```newgrp wireshark``` ```wireshark```
+- Käytännössä täysin siis Teron ohjeiden mukaan. Tässä ei kuitenkaan kysytty tuota ei sudojen osallisuutta pakettien kaappaamiseen.
+- ![image](https://github.com/user-attachments/assets/b02a93e8-f45c-4e9d-a2e1-a95d954419c5)
+- Valitaan tuo eth0
+- Sen voi myös tarkistaa ```ip a``` - komennolla, josta näkyy sen olevan aktiivisessa käytössä
+- ![image](https://github.com/user-attachments/assets/78c1ac62-283c-40ee-9442-842ac21f7be8)
 
 
 
