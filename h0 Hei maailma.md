@@ -13,8 +13,18 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 ## h1 Sniff
 x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
-*Karvinen 2025: Wireshark - Getting Started https://terokarvinen.com/wireshark-getting-started/*
-Karvinen 2025: Network Interface Names on Linux https://terokarvinen.com/network-interface-linux/
+## *Karvinen 2025: Wireshark - Getting Started https://terokarvinen.com/wireshark-getting-started/*
+- Asennus perus - ```sudo apt-get install wireshark```
+- "Should non-superusers be able to capture packets - yes" - Käsittääkseni kuitenkin se voi tuoda haavoittuvuuksia, jos esimerkiksi yritysverkossa tavallinen käyttäjäjä pystyisi salakuunnella liikennettä
+- Itsellekin muistiin kelloasetukset ```sudo timedatectl set-time "2025-03-30 21:06"```
+- ```sudo adduser <nimi> wireshark``` - Lisätään sniffigrouppiin
+- ```newgrp wireshark```
+- ```wireshark```
+- Voi tallentaa ja ladata myöhemmin tarkastelua varten
+*Filtterit*
+  - Voi lisätä filttereitä lähempää tarkastelua varten ja niitä voi myös yhdistää, esim "tcp and ip.addr == <ip-osoite>", jotta näkee vain haluamansa liikenteen
+- Oikeeklikkaus - "Follow: TCP Stream" - salaamattoman liikenteen lukemista tekstinä
+## Karvinen 2025: Network Interface Names on Linux https://terokarvinen.com/network-interface-linux/
 
 
 
