@@ -75,6 +75,8 @@ Yleiset network interface nimet
 - Sen voi myös tarkistaa ```ip a``` - komennolla, josta näkyy sen olevan aktiivisessa käytössä
 - ![image](https://github.com/user-attachments/assets/78c1ac62-283c-40ee-9442-842ac21f7be8)
 
+- Toimiiko nyt?
+
 
 
 
