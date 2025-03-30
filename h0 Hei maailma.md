@@ -15,7 +15,7 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 ## *Karvinen 2025: Wireshark - Getting Started https://terokarvinen.com/wireshark-getting-started/*
 - Asennus perus - ```sudo apt-get install wireshark```
-- "Should non-superusers be able to capture packets - yes" - Käsittääkseni kuitenkin se voi tuoda haavoittuvuuksia, jos esimerkiksi yritysverkossa tavallinen käyttäjäjä pystyisi salakuunnella liikennettä
+- "Should non-superusers be able to capture packets - yes" - Käsittääkseni kuitenkin se voi tuoda haavoittuvuuksia, jos esimerkiksi yritysverkossa tavallinen käyttäjäjä pystyisi salakuunnella liikennettä... Vähän tapauskohtaista
 - Itsellekin muistiin kelloasetukset ```sudo timedatectl set-time "2025-03-30 21:06"```
 - ```sudo adduser <nimi> wireshark``` - Lisätään sniffigrouppiin
 - Jotta ei tarvitse kirjautua ulos saadakseen muutokset voimaan, laiskojen tapa avata uusi shelli ```newgrp wireshark``` ```wireshark```
