@@ -126,13 +126,16 @@ Yleiset network interface nimet
 - Endpoints - välilehdeltä Ethernet - kohdassa on vain 2 MAC - osoitetta, joten uskoisin, että tässä on vain 2 fyysistä laitetta.
 - ![image](https://github.com/user-attachments/assets/03f6317b-766c-454d-a0b7-a9baefd3a381)
 - Protokollat QUIC, ARP, DNS, TCP, TLSv1.3
-- Koska tarkoitus on oppia, lähdin selvittämään tuota QUIC ja TLSv1.3 lisää.   *QUIC on siis vähän kuin "päivitetty" versio TCP - protokollasta, joka vähentää kättelyitä ja täten nopeuttaa yhteyksien muodostamista. Se myös estää "head-of-line blockingia" sillä, että se tukee useita yksittäisiä streameja yhdessä yhteydessä, kun TCP käsittelee ne peräkkäin. Se on suorituskyvyltään parempi, kun TCP, mutta siinäkin on pari ongelmaa.
+- Koska tarkoitus on oppia, lähdin selvittämään tuota QUIC ja TLSv1.3 lisää.
+
+    *QUIC on siis vähän kuin "päivitetty" versio TCP - protokollasta, joka   vähentää kättelyitä ja täten nopeuttaa yhteyksien muodostamista. Se myös estää "head-of-line blockingia" sillä, että se tukee useita yksittäisiä streameja yhdessä yhteydessä, kun TCP käsittelee ne peräkkäin. Se on suorituskyvyltään parempi, kun TCP, mutta siinäkin on pari ongelmaa.
     1. Pakettien virheellinen saapumisjärjestys - tulkinta: pakettihävikki
     2. Suorituskyvyn heikentyminen mobiililaitteilla kuormituksen
        vaikutuksen johdosta
   * TLSv1.3 on tietenkin TLS - protokolla ja se on päivitetty, turvallisempi     vaihtoehto 1.2 verrattuna.
   * ![image](https://github.com/user-attachments/assets/ad134b90-366d-45b5-814d-67f65f5a8d7a) (Kuva 1)
-
+## f) Mitä selainta käyttäjä käyttää? surfing-secure.pcap
+- Tätä on tullu pähkäiltyä nyt vähän jo liian pitkään. Kokeilin ```tls.handshake.type == 1```, suodattaa ```dns``` ja vaikka mitä muuta löytämättä kuitenkaan oikeaa vastausta.
 
 
 
