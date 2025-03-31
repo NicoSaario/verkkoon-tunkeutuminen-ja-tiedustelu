@@ -115,7 +115,7 @@ Yleiset network interface nimet
 - Valitsin tähän tehtävään juuri sen, jossa konkreettisesti näkyy HTTP:n toiminta. Eli siinä näkyy se, mitä haetaan, miten haetaan, versio, host, josta haetaan, kielet, mitä sille tehdään (keep-alive) ja lopussa mm. koko pyynnön URL, jota seuraamalla saa hienon onnistumis - viestin
 - ![image](https://github.com/user-attachments/assets/a54ff5a6-057f-4ad9-b960-1280dfe82053)
 
-
+## e) Mitäs tuli surffattua? Avaa [surfing-secure.pcap.](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap). Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
 
 
 
