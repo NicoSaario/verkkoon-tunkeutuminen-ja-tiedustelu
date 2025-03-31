@@ -158,7 +158,7 @@ Käyttäjä on surffaillut ```terokarvinen.com```, ```gc.zgo.at``` ja ```terokar
 ![image](https://github.com/user-attachments/assets/18b76a1d-fa9a-4039-8430-60f98ff5d06b)
 
 
-
+## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se, eli selitä mahdollisimman perusteellisesti, mitä tapahtuu. (Tässä pääpaino on siis analyysillä ja selityksellä, joten liikennettä kannattaa ottaa tarkasteluun todella vähän - vaikka vain pari pakettia. Gurut huomio: Selitä myös mielestäsi yksinkertaiset asiat.)
 
 
 
