@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1f222356-e301-4479-93f0-455b1914f7f7)# Kotitehtävät
+# Kotitehtävät
 
 Kotitehtävät ovat kurssilta "Verkkoon Tunkeutuminen ja Tiedustelu - Network Attacks and Reconnaissance" ja löytyvät osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#verkkojen-perusteet 
 
