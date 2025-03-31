@@ -123,6 +123,16 @@ Yleiset network interface nimet
 - ![image](https://github.com/user-attachments/assets/861c7ccc-a2c4-447e-9b53-5b316aa6642c)
 
 - Tässä esimerkiksi näkyy se, montako pakettia löytyy (283), kauanko kesti (7,536s), Bytes (122445) jne.
+- Endpoints - välilehdeltä Ethernet - kohdassa on vain 2 MAC - osoitetta, joten uskoisin, että tässä on vain 2 fyysistä laitetta.
+- ![image](https://github.com/user-attachments/assets/03f6317b-766c-454d-a0b7-a9baefd3a381)
+- Protokollat QUIC, ARP, DNS, TCP, TLSv1.3
+- Koska tarkoitus on oppia, lähdin selvittämään tuota QUIC ja TLSv1.3 lisää.   *QUIC on siis vähän kuin "päivitetty" versio TCP - protokollasta, joka vähentää kättelyitä ja täten nopeuttaa yhteyksien muodostamista. Se myös estää "head-of-line blockingia" sillä, että se tukee useita yksittäisiä streameja yhdessä yhteydessä, kun TCP käsittelee ne peräkkäin. Se on suorituskyvyltään parempi, kun TCP, mutta siinäkin on pari ongelmaa.
+    1. Pakettien virheellinen saapumisjärjestys - tulkinta: pakettihävikki
+    2. Suorituskyvyn heikentyminen mobiililaitteilla kuormituksen
+       vaikutuksen johdosta
+  * TLSv1.3 on tietenkin TLS - protokolla ja se on päivitetty, turvallisempi     vaihtoehto 1.2 verrattuna.
+  * ![image](https://github.com/user-attachments/assets/ad134b90-366d-45b5-814d-67f65f5a8d7a) (Kuva 1)
+
 
 
 
@@ -146,5 +156,9 @@ Yleiset network interface nimet
 - Internet Protocol Suite, wikipedia (edit 21/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Internet_protocol_suite, Luettu 30/30/2025
 
 - Easy Web analytics. No tracking of personal data, GoatCounter, Luettavissa: https://www.goatcounter.com/, Luettu 31/03/2025
+- QUIC, Wikipedia (edit 26/03/2025), Luettavissa: https://en.wikipedia.org/wiki/QUIC, Luettu 31/03/2025
+- QUIC vs. TCP-Development and Monitoring Guide, catchpoint, Luettavissa: https://www.catchpoint.com/http2-vs-http3/quic-vs-tcp, Luettu 31/03/2025
+- Why use TLS 1.3?, Cloudflare, Luettavissa: https://www.cloudflare.com/learning/ssl/why-use-tls-1.3/, Luettu 31/03/2025
+- Kuva 1: https://www.a10networks.com/wp-content/uploads/differences-between-tls-1.2-and-tls-1.3-full-handshake.png
 
 
