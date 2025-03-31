@@ -1,4 +1,4 @@
-# Kotitehtävät
+![image](https://github.com/user-attachments/assets/1f222356-e301-4479-93f0-455b1914f7f7)# Kotitehtävät
 
 Kotitehtävät ovat kurssilta "Verkkoon Tunkeutuminen ja Tiedustelu - Network Attacks and Reconnaissance" ja löytyvät osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#verkkojen-perusteet 
 
@@ -160,12 +160,42 @@ Käyttäjä on surffaillut ```terokarvinen.com```, ```gc.zgo.at``` ja ```terokar
 
 ## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se, eli selitä mahdollisimman perusteellisesti, mitä tapahtuu. (Tässä pääpaino on siis analyysillä ja selityksellä, joten liikennettä kannattaa ottaa tarkasteluun todella vähän - vaikka vain pari pakettia. Gurut huomio: Selitä myös mielestäsi yksinkertaiset asiat.)
 
+- Tein jo aika teknistä analyysiä aiemmin, joten ajattelin nyt enemmän keskittyä näihin perusasioihin
+- Tein niin, että valmiista duckduckista kirjoitin hakusanaksi "what is happening" ja stoppasin tallentamisen, kun sivu oli valmis.
+
+- ![image](https://github.com/user-attachments/assets/c0d43e6e-1aaa-4c02-9c13-3a416e63c566)
+
+- Tarkkailin samalla sitä, mitä Wiresharkin sisällä tapahtuu ja jokaista kirjoitusta kohtaan tuli yksi tapahtuma. Eli se käytännössä kirjasi ylös jokaisen syöttämäni asian omalle rivilleen (siksi niitä on paljon). Alleviivattu kohta myös näyttää sen, että Hyper Transfer Protocollaa on käytetty, joka vahvistaa osaltaan sen, että kyseessä oli tekstinsyöttöä.
+- Samalla näkyy se, mistä osoitteesta lähdetään ja mihin mennään, eli 10.0.2.15 -> 20.43.161.105, joista ensimmäinen IP on VirtualBoxin ja toinen DuckDuckGon
+- Näkyy portit 34730 ja vastaanotto 443
+- TLS 1.2 versio ja IPv4
+
+- ![image](https://github.com/user-attachments/assets/8666630d-0412-469c-9556-fa0926ade54f)
+- Tästä kuvasta taas näkee hyvin sen, koska paketti on lähtenyt, kauanko sillä on kestänyt ja 
+aika, milloin se on tapahtunut. Mielenkiintoinen yksityiskohra tuo kellonaika, sillä se nähtävästi ottaa huomioon myös aikaerot.
+- Interface id on se, jota kaappaamme eli eth0
+- Ja 1184 bittiä lähti lentoon
+
+![image](https://github.com/user-attachments/assets/49990c15-f6d9-4e7f-9f61-6f54e8c41722)
+
+- Tässä kohdassa Serveri on vastaanottanut yhteyspyynnon ja aloittaa kättelyn. Se sisältää tarvittavat salaukset, jotta jatkossa käynnistyvä viesti salataan
+- Se myös Hellolla kertoo näkevänsä tuon syötetyn haun. Itse asiassa jouduin tekemään tämän uudelleen, sillä olin malttamaton ja katkaisin aiemmmin tuon kaappauksen, jonka takia voi näkyä pientä muutosta IP - osoitteissa.
+
+- ![image](https://github.com/user-attachments/assets/e1700a08-5655-41bb-ab9a-544a3f17c3f6)
+- Tässä puolesatan näkyy se, miten serveripuolelta lähtee tieto eteenpäin takaisin käyttäjälle, identifikaatiot jne.
+-  Tässä vielä selvennettynä serveriltä koneelle:
+-  ![image](https://github.com/user-attachments/assets/de5207fa-94a3-49d0-9c9d-d1672bebd016)
 
 
 
-
+### Miten meni?
+- Ihan nopeasti tähän loppuun omia ajatuksia. Oli aika kuluttava harjoitus, mutta hyvä sellainen. Ei oikeastaan aikaisemmin ole tullut käsiteltyä Wiresharkkia näin laajasti ja sen käyttö on muutenkin ollu todella vähäistä. Tuntu, että meni moni asia vähän ehkä aiheen vierestä tai, ettei kaikki vastaukset välttämättä ollut ihan täysin sitä, mitä oli haettu. Tehtävät oli kuitenkin hyvät ja näiden tiimoilta tuli käytyä kyllä todella monta eri lähdettä läpi ja "pakottaa" samalla oppimaan asioita lisää. Verkkojen toiminnassa tarvitsen itse vielä lisää teorian osaamista, jota pyrin tässä jatkuvasti samalla kehittämään.
+- Eteenpäin siis!
 
 ### Lähteet
+
+- Verkkoon tunkeutuminien ja tiedustelu, Tero Karvinen (kotitehtävät), Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/, Luettu 31/03/2025
+  
 - Wireshark - Getting Started, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/wireshark-getting-started/, Luettu 30/03/2025
 
 - Network Interface Names on Linux, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/network-interface-linux/, Luettu 30/03/2025
@@ -173,9 +203,13 @@ Käyttäjä on surffaillut ```terokarvinen.com```, ```gc.zgo.at``` ja ```terokar
 - Internet Protocol Suite, wikipedia (edit 21/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Internet_protocol_suite, Luettu 30/30/2025
 
 - Easy Web analytics. No tracking of personal data, GoatCounter, Luettavissa: https://www.goatcounter.com/, Luettu 31/03/2025
+
 - QUIC, Wikipedia (edit 26/03/2025), Luettavissa: https://en.wikipedia.org/wiki/QUIC, Luettu 31/03/2025
+
 - QUIC vs. TCP-Development and Monitoring Guide, catchpoint, Luettavissa: https://www.catchpoint.com/http2-vs-http3/quic-vs-tcp, Luettu 31/03/2025
+
 - Why use TLS 1.3?, Cloudflare, Luettavissa: https://www.cloudflare.com/learning/ssl/why-use-tls-1.3/, Luettu 31/03/2025
+
 - Kuva 1: https://www.a10networks.com/wp-content/uploads/differences-between-tls-1.2-and-tls-1.3-full-handshake.png
 
 
