@@ -55,7 +55,7 @@ Yleiset network interface nimet
 - Klikataan Disconnect ![image](https://github.com/user-attachments/assets/6c241b07-8bcd-46ea-a9bc-adc93177ae8d)
 - Nyt pitäisi olla kaikki pois. Voidaan varmistaa se pingaamalla, jolloin Googlen nimipalvelimiin ei saa yhteyttä
 - ![image](https://github.com/user-attachments/assets/16758cb7-2585-4400-becb-c019c2347ad7)
-- Ja avaamalla varuiksi vielä FireFox ja yrittämällä avaamata sillä jokin sivu
+- Ja avaamalla varuiksi vielä FireFox ja yrittämällä avata sillä jokin sivu
 
 ![image](https://github.com/user-attachments/assets/a62e81f6-f751-4429-89a7-82a94710fa18)
 
