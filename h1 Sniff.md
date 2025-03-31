@@ -141,11 +141,16 @@ Yleiset network interface nimet
   
 - Tätä on tullu pähkäiltyä nyt vähän jo liian pitkään. Kokeilin ```tls.handshake.type == 1```, suodattaa ```dns``` ja vaikka mitä muuta löytämättä kuitenkaan oikeaa vastausta.
   
-- Tässä kohtaa lähdin todella syviin uriin etsimään tuota selainta. Niin syvälle, että lähteiden merkitseminen ja jokaisen vaiheen kirjaus tuottaisi tästä koko paketista niin pitkän, ettei sitä kukaan jaksaisi lukea. Lopputuloksena päädyin uudelleen tuohon QUIC - kohtaan ja sain selville, että lähtökohtaisesti Google Chrome sekä Edge käyttävät QUIC - protokollaa ja päädyn Chromeen, sillä käyttäjän ensimmäinen Query on www.google.com. Tässä toki vähän ristiriidassa on se, että voihan käyttäjä vain lisätä selaimen ensimmäiseksi sivuksi googlen ja tätä kautta ensimmäinen haku on siihen.
+- Tässä kohtaa lähdin todella syviin uriin etsimään tuota selainta. Niin syvälle, että lähteiden merkitseminen ja jokaisen vaiheen kirjaus tuottaisi tästä koko paketista niin pitkän, ettei sitä kukaan jaksaisi lukea. Lopputuloksena päädyin uudelleen tuohon QUIC - kohtaan ja sain selville, että lähtökohtaisesti Google Chrome sekä Edge käyttävät QUIC - protokollaa ja päädyn Chromeen, sillä käyttäjän ensimmäinen Query on www.google.com. Tässä toki vähän ristiriidassa on se, että voihan käyttäjä vain lisätä selaimen ensimmäiseksi sivuksi googlen ja tätä kautta ensimmäinen haku on siihen. Myös FireFoxilla ja Safarilla on siihen jo tuki, mutta se ei ole defaulttina päällä.
 
 
+## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
 
-
+- Lähdin liikkeelle tästä ARP - kyselystä
+  ![image](https://github.com/user-attachments/assets/56bda1f2-4634-4dfc-8cf8-bca78a488d55)
+- Siitä saatiin MAC - osoite. Verkkokorttihan oli 3 ensimmäistä tavua
+- Kyseessä on Oracle VirtualBox 5.2 + Vagrant
+- https://macaddress.io/faq/how-to-recognise-an-oracle-virtual-machine-by-its-mac-address
 
 
 
