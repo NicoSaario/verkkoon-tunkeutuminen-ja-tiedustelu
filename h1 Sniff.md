@@ -134,9 +134,14 @@ Yleiset network interface nimet
        vaikutuksen johdosta
   * TLSv1.3 on tietenkin TLS - protokolla ja se on päivitetty, turvallisempi     vaihtoehto 1.2 verrattuna.
   * ![image](https://github.com/user-attachments/assets/ad134b90-366d-45b5-814d-67f65f5a8d7a) (Kuva 1)
-## f) Mitä selainta käyttäjä käyttää? surfing-secure.pcap
-- Tätä on tullu pähkäiltyä nyt vähän jo liian pitkään. Kokeilin ```tls.handshake.type == 1```, suodattaa ```dns``` ja vaikka mitä muuta löytämättä kuitenkaan oikeaa vastausta.
 
+## f) Vapaaehtoinen, vaikea: Mitä selainta käyttäjä käyttää? surfing-secure.pcap (Päivitys 2025-03-31 w14 ma - muutin tehtävän vapaaehtoiseksi Giang:n suosituksesta)
+
+/// Lähdin tekemään ennen tuota vapaahetoista lisäystä, mutta koin sen itse hyödyllisenä oppimisen kannalta ///
+  
+- Tätä on tullu pähkäiltyä nyt vähän jo liian pitkään. Kokeilin ```tls.handshake.type == 1```, suodattaa ```dns``` ja vaikka mitä muuta löytämättä kuitenkaan oikeaa vastausta.
+  
+- Tässä kohtaa lähdin todella syviin uriin etsimään tuota selainta. Niin syvälle, että lähteiden merkitseminen ja jokaisen vaiheen kirjaus tuottaisi tästä koko paketista niin pitkän, ettei sitä kukaan jaksaisi lukea. Lopputuloksena päädyin uudelleen tuohon QUIC - kohtaan ja sain selville, että lähtökohtaisesti Google Chrome sekä Edge käyttävät QUIC - protokollaa ja päädyn Chromeen, sillä käyttäjän ensimmäinen Query on www.google.com. Tässä toki vähän ristiriidassa on se, että voihan käyttäjä vain lisätä selaimen ensimmäiseksi sivuksi googlen ja tätä kautta ensimmäinen haku on siihen.
 
 
 
