@@ -115,7 +115,15 @@ Yleiset network interface nimet
 - Valitsin tähän tehtävään juuri sen, jossa konkreettisesti näkyy HTTP:n toiminta. Eli siinä näkyy se, mitä haetaan, miten haetaan, versio, host, josta haetaan, kielet, mitä sille tehdään (keep-alive) ja lopussa mm. koko pyynnön URL, jota seuraamalla saa hienon onnistumis - viestin
 - ![image](https://github.com/user-attachments/assets/a54ff5a6-057f-4ad9-b960-1280dfe82053)
 
-## e) Mitäs tuli surffattua? Avaa [surfing-secure.pcap.](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap). Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
+## e) Mitäs tuli surffattua? Avaa [surfing-secure.pcap.](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap) Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
+
+- Pintapuolisesti tutkittuna, mentiin googlesta terokarvinen.com ja samalla aktivoitui sivuston seuranta gc.zgo.at eli GoatCounter - niminen analytiikkatyökalu, jolla tutkitaan sivuston kävijätietoja ja statistiikkaa.
+- Kun menee Statistics - välilehdelle ja siitä "Capture File Properties", näkee tietoja kaapatusta paketista
+  
+- ![image](https://github.com/user-attachments/assets/861c7ccc-a2c4-447e-9b53-5b316aa6642c)
+
+- Tässä esimerkiksi näkyy se, montako pakettia löytyy (283), kauanko kesti (7,536s), Bytes (122445) jne.
+
 
 
 
@@ -131,8 +139,12 @@ Yleiset network interface nimet
 
 
 ### Lähteet
-Wireshark - Getting Started, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/wireshark-getting-started/, Luettu 30/03/2025
-Network Interface Names on Linux, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/network-interface-linux/, Luettu 30/03/2025
-Internet Protocol Suite, wikipedia (edit 21/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Internet_protocol_suite, Luettu 30/30/2025
+- Wireshark - Getting Started, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/wireshark-getting-started/, Luettu 30/03/2025
+
+- Network Interface Names on Linux, Tero Karvinen (03/2025), Luettavissa: https://terokarvinen.com/network-interface-linux/, Luettu 30/03/2025
+
+- Internet Protocol Suite, wikipedia (edit 21/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Internet_protocol_suite, Luettu 30/30/2025
+
+- Easy Web analytics. No tracking of personal data, GoatCounter, Luettavissa: https://www.goatcounter.com/, Luettu 31/03/2025
 
 
