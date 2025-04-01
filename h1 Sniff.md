@@ -152,6 +152,10 @@ Yleiset network interface nimet
 - Kyseessä on Oracle VirtualBox 5.2 + Vagrant
 - https://macaddress.io/faq/how-to-recognise-an-oracle-virtual-machine-by-its-mac-address
 
+- Jäi kuitenkin vähän ihmetyttämään koko homma ja päätin kerran vielä tarkistaa. Kokeilin kolmea eri sivustoa, kunnes löysin tämän:
+- ![image](https://github.com/user-attachments/assets/1cceea86-c039-471c-a5a5-a400f4341132)
+- Täältä: https://maclookup.app/search/result?mac=52:54:00:2F:E1:E5
+  
 ## h) Millä weppipalvelimella käyttäjä on surffaillut? surfing-secure.pcap Huonoja uutisia: yhteys on suojattu TLS-salauksella.
 Käyttäjä on surffaillut ```terokarvinen.com```, ```gc.zgo.at``` ja ```terokarvinen.goatcounter.com```
   
