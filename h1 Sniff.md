@@ -157,7 +157,8 @@ Yleiset network interface nimet
 - Täältä: https://maclookup.app/search/result?mac=52:54:00:2F:E1:E5
   
 ## h) Millä weppipalvelimella käyttäjä on surffaillut? surfing-secure.pcap Huonoja uutisia: yhteys on suojattu TLS-salauksella.
-Käyttäjä on surffaillut ```terokarvinen.com```, ```gc.zgo.at``` ja ```terokarvinen.goatcounter.com```
+Käyttäjä on surffaillut ```terokarvinen.com```, ```gc.zgo.at```, ```terokarvinen.goatcounter.com``` ja ```www.google.com```, joten olisko Google/Terokarvinencom(?)
+
   
 ![image](https://github.com/user-attachments/assets/18b76a1d-fa9a-4039-8430-60f98ff5d06b)
 
