@@ -156,7 +156,47 @@ f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa
 ![image](https://github.com/user-attachments/assets/9073ce9e-7b98-4afe-bf1c-ebfec3962509)
 
 ## g) Agentti. Vaihda nmap:n user-agent niin, että se näyttää tavalliselta weppiselaimelta.
-- Hetken meni miettiessä, että mitä tässä tarkoitetaan... Onneksi törmäsin tohon jo aikaisemmin, kun selailin enemmän noista User-Agenteista. 
+- Hetken meni miettiessä, että mitä tässä tarkoitetaan... Onneksi törmäsin tohon jo aikaisemmin, kun selailin enemmän noista User-Agenteista.
+- En jostain syystä löytänyt manualista mitään, joten törmäsin ensin tähän [lähteeseen](https://infosecwriteups.com/evading-detection-while-using-nmap-69633df091f3)
+- Ja tarkistin samalla, oliko [Tero](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) jättänyt vinkkejä ja olihan siellä!
+- Eli löytyyhän se sieltä, kun tarpeeksi kaivaa
+
+![image](https://github.com/user-attachments/assets/1d933110-232a-46f2-8ce8-f1650e27eeab)
+
+- Eli Teron esimerkissä ```--script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)"```
+- Halusin kokeilun vuoksi löytää vähän jonkun aidomman, joten kävin [hakemassa](https://deviceatlas.com/blog/list-of-user-agent-strings#android) Chromecastin, jota käytän zombilaitteena tähän seuraavaan skannaukseen: "Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36"
+
+- Eli komento menee kuta kuinkin: ```nmap -A localhost --script-args http.useragent="Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36"```
+
+- Halusin kuitenkin selvittää, että pystynkö muokkaamaan jotain niin, ettei tuota komentoa tarvitse, eli olisin aina Chromecastillä liikenteessä
+- Kokeilin ```whereis nmap```- komentoa, jotta löydän kansiot
+- Se vei ![image](https://github.com/user-attachments/assets/751ae42f-7092-432f-9088-8e824e48ed1b)
+- Navigoin scripteihin ja sieltä tänne
+- ![image](https://github.com/user-attachments/assets/5ca7b1ef-ccb5-49ba-8ae3-fcab3c810c58)
+
+- Täällä näkyy sen scriptin sisältö ja käsittääkseni tuota riviä muokkaamalla se tekee aina sen mukaan
+- ![image](https://github.com/user-attachments/assets/437e0478-db36-4005-a018-9d5da19b51da)
+```sudo nano``` - Olisin kaivannut microeditoria, mutta en pelkästään sen takia laittanut nettiä päälle
+- Muutin sen siis näin
+- ![image](https://github.com/user-attachments/assets/c03c4b07-3c79-411f-8dbf-766cfaea1b7c)
+- Laitoin sen varmuuden vuoksi vielä tänne
+  ![image](https://github.com/user-attachments/assets/c5c0a68c-c6a3-46c3-be43-4441c2e858c2)
+
+## h) Pienemmät jäljet. Porttiskannaa weppipalvelimesi uudelleen localhost-osoitteella. Tarkastele sekä Apachen lokia että siepattua verkkoliikennettä. Mikä on muuttunut, kun vaihdoit user-agent:n? Löytyykö lokista edelleen tekstijono "nmap"?
+
+- Aika siis testata toimintaa. Samoilla komennoilla, kun aiemmin.
+- Harmiksi se näkyy vieläkin siellä
+- ![image](https://github.com/user-attachments/assets/77bafb7f-e481-48b7-b747-857482a77809)
+
+- Olin unohtanut lisätä scriptin sinne, eli mutan vain komennon ```sudo nmap -A localhost --script-args http.useragent```
+- Ainoastaan yksi rivi näkyy!
+- ![image](https://github.com/user-attachments/assets/44a5f932-209c-4c36-ab7e-474ad2022ac1)
+- Eli aikaisemmat scriptimuutokset toimivat! Hurraa.
+
+## i) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
+
+- Sinällään tehtävä vaikuttaa helpolta, koska tein jo lähes saman aiemmin.
+
 
 ## Lähteet:
 
