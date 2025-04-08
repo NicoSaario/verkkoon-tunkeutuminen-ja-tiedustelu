@@ -193,7 +193,14 @@ f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa
 - ![image](https://github.com/user-attachments/assets/44a5f932-209c-4c36-ab7e-474ad2022ac1)
 - Eli aikaisemmat scriptimuutokset toimivat! Hurraa. Mutta kuten kohta huomataan, lowercheck näkyy siellä tarkoituksella
 
-- Sitten vielä Apachen logit:
+- Sitten vielä Apachen lokit:
+
+- ![image](https://github.com/user-attachments/assets/3026cbfa-c13d-44f7-907d-352120b9e94b)
+
+
+
+- Eli ensin näkyy aikaisemman skannin tuloksena myös tuo Nmap, jonka jälkeen näkyy vielä tulevassa skannauksessa "nmaplowercheck", mutta User-Agent on muuttunut
+
 
 ## i) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
 
@@ -220,11 +227,39 @@ Mitään ei löytynyt!
 
 - Tässä vielä Wiresharkin näkemys aiheesta ja samasta paketista, jota aikasemmin tutkittiin:
 - ![image](https://github.com/user-attachments/assets/2d1c91ed-ee97-4203-a9ec-debc1bba8670)
-- Nyt on User-Agent muuttunut 1\r\n ja ilmeisesti jokin mennyt pieleen, koska 
+- Nyt on User-Agent muuttunut 1\r\n ja ilmeisesti jokin mennyt pieleen, mutta ainakin se on piilossa.
+
+- Apachen lokit:
+
+![image](https://github.com/user-attachments/assets/7b548c83-5402-4609-b478-3fafd464b523)
+
+- Eli ensimmäisessä kohdassa klo 20:51 näkyy tuo "lowercheck", joka muutettiin "krotti" - nimiseksi
+- Ja ajassa 21:17 uuden skannauksen myötä nmap on hävinnyt kokonaan ja muuttunut "krotti" - nimiseksi
+
+## j) Vapaaehtoinen, vaikea: Invisible, invincible. Etsi jokin toinen nmap:n skripti, jonka verkkoliikenteessä esiintyy merkkijono "nmap" isolla tai pienellä. Muuta nmap:n koodia niin, että tuo merkkijono ei enää näy verkkoliikenteessä.
+
+Tein tämän itse asiassa jo kohdassa g), jossa vaihdettiin user-agent ja muutin scriptin sisältöä. Filtterillä ```frame contains "nmap"```ei löydy mitään, joten käsittääkseni se tarkoittaa sitä, että nyt ollaan truely invincible.
+
 
 ## Lähteet:
 
+- Verkkoon tunkeutuminen ja tiedustelu, Tero Karvinen, Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/, Luettu: 08/04/2025
+  
 -User-Agent, mdn web docs_, Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/User-Agent, Luettu 08/04/2025
+
 - robots.txt, Wikipedia, (Rewieved 16/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Robots.txt, Luettu: 08/04/2025
 
-wireshark-filter(4) Manual Page, Luettavissa: https://www.wireshark.org/docs/man-pages/wireshark-filter.html, Luettu 08/04/2025
+- wireshark-filter(4) Manual Page, Luettavissa: https://www.wireshark.org/docs/man-pages/wireshark-filter.html, Luettu 08/04/2025
+
+- Tuskan pyramidi (Bianco 2013: Pyramid of Pain), https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html, Luettu 08/04/2025
+
+- Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh, Ethical Hacking, November 7, 2023, Luettavissa: https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/diamond-model-intrusion-analysis/, Luettu 08/04/2025
+
+- Understanding the Apache access log: how to view, locate, and analyze,  By David Girvin, February 20, 2025, Luettavissa: https://www.sumologic.com/blog/apache-access-log/, Luettu: 08/04/2025
+- https://nmap.org/, Luettu 08/04/2025
+
+- Evading Detection while using nmap, Understanding how nmaplowercheck will give you away, bob van der staak, Nov 17, 2023, Luettavissa: https://infosecwriteups.com/evading-detection-while-using-nmap-69633df091f3, Luettu 08/04/2025
+
+- What are HTTP status codes?, umbraco, Luettavissa: https://umbraco.com/knowledge-base/http-status-codes/, Luettu 08/04/2025
+  
+- robots.txt, Wikipedia, Luettavissa: https://en.wikipedia.org/wiki/Robots.txt, Luettu: 08/04/2025
