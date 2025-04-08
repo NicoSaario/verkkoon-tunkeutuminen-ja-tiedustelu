@@ -104,8 +104,20 @@ Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh
 ## d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
 
 - Olen jälleen /var/log/apache2 - kansiopolussa ja suoritan komennon ```cat access.log```.
-- 
+- nmap löytyy monesta kohtaa ja näkyy myös se, mitä pyyntöjä se on tehnyt
+- Pisti silmään ensimmäisinä nuo /robots.txt, /.git/HEAAD, /favicon.ico
+- Ilmeisesti nmap käyttää /robots.txt - tiedostoa hakemaan tiedot siitä, mihin paikkoihin on pääsy ["some may even use the robots.txt as a guide to find disallowed links and go straight to them"](https://en.wikipedia.org/wiki/Robots.txt) ja tässä tapauksessa, kuten Wikipediassa mainitaan, voi käyttää tuota tiedostoa löytääkseen linkkejä, joihin ei ole pääsyä ja hakea niihin tietoa
+- Aluksi luulin, että tuo "nmaplowercheck" liittyisi jotenkin siihen, että se hakisi tietoa joko osoitteista tai sivuston tiedoista pienillä kirjaimilla, mutta siinä nyt ei ollut kauheesti järkeä. Päädin etsimään, mitä se oikeasti tarkoittaa. Lopulta en oikeastaan löytänyt mitään muuta, kuin sen, että se tekee pyyntöjä esimerkiksi tuon 404 - tarkistuksen ja katsoo, mitä sivusto palauttaa.
+- [/.git/HEAD](https://nmap.org/nsedoc/scripts/http-git.html) - tarkistaa Git repon sivuston juuridokumentin ja hakee siitä niin paljon tietoa, kuin mahdollista
+- [/favicon.ico](https://nmap.org/nsedoc/scripts/http-favicon.html) - Hakee "faviconin", eli yleensä sen pienen kuvakkeen selaimen välilehdellä, vaikkapa GitHubin pienen kissan, vertaa sitä tietokantaan tunnetuista verkkosivujen kuvakkeista ja tunnistaa täten sen nimen
+
+- Käsittääkseni tuolla Teron antamalla vinkillä 
 
 
 
 
+
+
+## Lähteet:
+
+- robots.txt, Wikipedia, (Rewieved 16/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Robots.txt, Luettu: 08/04/2025
