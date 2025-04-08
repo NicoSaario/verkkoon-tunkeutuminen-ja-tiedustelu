@@ -67,7 +67,10 @@ Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh
 - Voidaan ottaa ```curl localhost``` ja nopeella vilkaisulla nähdä, että se toimii "It works!" ja Apachen esimerkkisivu on aktiivisena.
 - ![image](https://github.com/user-attachments/assets/dc53961f-e0fe-4438-bd0b-1d83f92967e9)
 - Tässä surffataan selaimella osoitteeseen ```http://localhost``` eli salaamattomalla HTTP - yhteydellä palvelimelle.
-- 
+- ![image](https://github.com/user-attachments/assets/2b2adfa1-5bab-4fe6-991d-a41fc6b67f40)
+- Seuraavaksi tutkitaan logeja. Logit löytyvät ```var/log/apache2/``` - kansiopolusta
+- Loput journalctl, jonka kuvaus ja tarkoitus näyttävästi löytyy ```man journalctl```
+- ![image](https://github.com/user-attachments/assets/39adef26-efd4-4090-aa60-021e85602f49)
 
 
 
