@@ -109,7 +109,8 @@ Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh
 - Ilmeisesti nmap käyttää /robots.txt - tiedostoa hakemaan tiedot siitä, mihin paikkoihin on pääsy ["some may even use the robots.txt as a guide to find disallowed links and go straight to them"](https://en.wikipedia.org/wiki/Robots.txt) ja tässä tapauksessa, kuten Wikipediassa mainitaan, voi käyttää tuota tiedostoa löytääkseen linkkejä, joihin ei ole pääsyä ja hakea niihin tietoa
 - Aluksi luulin, että tuo "nmaplowercheck" liittyisi jotenkin siihen, että se hakisi tietoa joko osoitteista tai sivuston tiedoista pienillä kirjaimilla, mutta siinä nyt ei ollut kauheesti järkeä. Päädin etsimään, mitä se oikeasti tarkoittaa. Lopulta en oikeastaan löytänyt mitään muuta, kuin sen, että se tekee pyyntöjä esimerkiksi tuon 404 - tarkistuksen ja katsoo, mitä sivusto palauttaa.
 - [/.git/HEAD](https://nmap.org/nsedoc/scripts/http-git.html) - tarkistaa Git repon sivuston juuridokumentin ja hakee siitä niin paljon tietoa, kuin mahdollista
-- [/favicon.ico](https://nmap.org/nsedoc/scripts/http-favicon.html) - Hakee "faviconin", eli yleensä sen pienen kuvakkeen selaimen välilehdellä, vaikkapa GitHubin pienen kissan, vertaa sitä tietokantaan tunnetuista verkkosivujen kuvakkeista ja tunnistaa täten sen nimen
+- [/favicon.ico](https://nmap.org/nsedoc/scripts/http-favicon.html) - Hakee "faviconin", eli yleensä sen pienen kuvakkeen selaimen välilehdellä, vaikkapa GitHubin pienen kissan ![image](https://github.com/user-attachments/assets/cb9a0e64-aa73-427e-850a-dd8753a0c7c3)
+, vertaa sitä tietokantaan tunnetuista verkkosivujen kuvakkeista ja tunnistaa täten sen nimen
 
 - Saman olisi nähtävästi helpommin saanut Teron vinkeillä, eli komennolla ```grep -ir "nmap"```
 - Käsittääkseni se on myös vastaus tuohon, että millä voisit tunnistaa porttiskannauksen jostain muusta lokista ja sen voi putkittaa vaikka | less
@@ -121,7 +122,7 @@ Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh
 
 Käynnistellään Wireshark komentoriviltä ```wireshark```
 - Valitaan Loopback adapter ![image](https://github.com/user-attachments/assets/f8f17d3f-b171-47b5-b558-214608379129)
-- Uusi komentorivi ja siihen ```sudo nmap -A loopback```
+- Uusi komentorivi ja siihen ```sudo nmap -A localhost```
 - Wiresharkissa alkaa tapahtua
 - ![image](https://github.com/user-attachments/assets/e39c6984-99a2-451b-abe2-e8c05aa0ccf1)
 - Tässä etsin saman esimerkin aikaisemmasta, eli tuosta ./git/HEAD - kohdasta, jossa näkyy elvästi User-Agenttina tuo Nmap Scripting Engine
@@ -136,6 +137,26 @@ Käynnistellään Wireshark komentoriviltä ```wireshark```
 - Laitoin filtterin kohtiin, jossa on "nmap". Se siis etsii kaikki paketit, joka sisältää tekstin "nmap"
 - ![image](https://github.com/user-attachments/assets/69ab20e0-6eb0-4676-8014-4eb8465efa4a)
 - Täällä siis näkyy jo aiemmin tarkastellut kohdat, jossa ajetaan scriptejä ja joka sisältää tekstin "nmap"
+
+f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa on sana "nmap".
+- Tähän Tero oli ystävällisesti vinkannut jo komennon ```sudo ngrep -d lo -i nmap```
+- Piti kuitenkin manuaalista tutkita, mitä se tekee
+- ```-i``` ei kiinnosta, onko sana TERO, tero vai TeRo, se hakee sen joka tapauksessa. Tässä tapauksessa sitä ei kiinnosta, onko nmap MiTeN kirjoitettu
+- ```-d lo``` pistää ngrepin kuuntelemaan loopback interfacea
+- Ajoin komennon sisään, toisella terminaalilla jälleen ```sudo nmap -A localhost```ja pistin huvikseen vielä Wiresharkin päälle
+
+![image](https://github.com/user-attachments/assets/b097004f-976a-4ce9-87bf-e96a828cacc0)
+
+![image](https://github.com/user-attachments/assets/7cc7046c-810f-421e-8988-1e0a75252dad)
+
+
+- Paketteja tuli siis 2348 ja 25 niistä vastas noihin arvoihin, jotka syötettiin eli sisälsi nmap.
+- Ihan mielenkiinnosta Wiresharkilla tuli sama tulos
+
+![image](https://github.com/user-attachments/assets/9073ce9e-7b98-4afe-bf1c-ebfec3962509)
+
+## g) Agentti. Vaihda nmap:n user-agent niin, että se näyttää tavalliselta weppiselaimelta.
+- Hetken meni miettiessä, että mitä tässä tarkoitetaan... Onneksi törmäsin tohon jo aikaisemmin, kun selailin enemmän noista User-Agenteista. 
 
 ## Lähteet:
 
