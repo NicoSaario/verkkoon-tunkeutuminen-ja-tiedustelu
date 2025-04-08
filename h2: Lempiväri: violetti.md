@@ -2,13 +2,14 @@
 
 Kotitehtävät ovat kurssilta "Verkkoon Tunkeutuminen ja Tiedustelu - Network Attacks and Reconnaissance" ja löytyvät osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#verkkojen-perusteet 
 
-Kotitehtävät on tehty Windows 11 - Home - käyttöjärjestelmällä, päivitykset ajettu 30/03/2025 asti.
+Kotitehtävät on tehty Windows 11 - Home - käyttöjärjestelmällä, päivitykset ajettu 08/04/2025 asti.
 
 AMD Ryzen 5 4500U, RAM 8 Gt.
 
-Aika: Itä-Euroopan normaaliaika Aikavyöhyke: Suomi (UTC+3) 30/03/2025 (pvm/kk/v)
+Aika: Itä-Euroopan normaaliaika Aikavyöhyke: Suomi (UTC+3) 08/04/2025 (pvm/kk/v)
 
 Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point release live image (2025.1a)
+
 
 # h2
 > h2 Taustaa
@@ -257,7 +258,7 @@ Tein tämän itse asiassa jo kohdassa g), jossa vaihdettiin user-agent ja muutin
 
 - Verkkoon tunkeutuminen ja tiedustelu, Tero Karvinen, Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/, Luettu: 08/04/2025
   
--User-Agent, mdn web docs_, Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/User-Agent, Luettu 08/04/2025
+- User-Agent, mdn web docs_, Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/User-Agent, Luettu 08/04/2025
 
 - robots.txt, Wikipedia, (Rewieved 16/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Robots.txt, Luettu: 08/04/2025
 
