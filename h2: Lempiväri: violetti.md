@@ -111,13 +111,28 @@ Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh
 - [/.git/HEAD](https://nmap.org/nsedoc/scripts/http-git.html) - tarkistaa Git repon sivuston juuridokumentin ja hakee siitä niin paljon tietoa, kuin mahdollista
 - [/favicon.ico](https://nmap.org/nsedoc/scripts/http-favicon.html) - Hakee "faviconin", eli yleensä sen pienen kuvakkeen selaimen välilehdellä, vaikkapa GitHubin pienen kissan, vertaa sitä tietokantaan tunnetuista verkkosivujen kuvakkeista ja tunnistaa täten sen nimen
 
-- Käsittääkseni tuolla Teron antamalla vinkillä 
+- Saman olisi nähtävästi helpommin saanut Teron vinkeillä, eli komennolla ```grep -ir "nmap"```
+- Käsittääkseni se on myös vastaus tuohon, että millä voisit tunnistaa porttiskannauksen jostain muusta lokista ja sen voi putkittaa vaikka | less
+- Toinen vaihtoehto olisi suodattaa esim. IP:n perusteella tai säätää palomuuriasetuksia
+- Tähän on myös valvontatyökaluja
 
 
+## e) Wire sharking. Sieppaa verkkoliikenne porttiskannatessa Wiresharkilla. Huomaa, että localhost käyttää "Loopback adapter" eli "lo". Tallenna pcap. Etsi kohdat, joilla on sana "nmap" ja kommentoi niitä. Jokaisen paketin jokaista kohtaa ei tarvitse analysoida, yleisempi tarkastelu riittää.
 
-
-
+Käynnistellään Wireshark komentoriviltä ```wireshark```
+- Valitaan Loopback adapter ![image](https://github.com/user-attachments/assets/f8f17d3f-b171-47b5-b558-214608379129)
+- Uusi komentorivi ja siihen ```sudo nmap -A loopback```
+- Wiresharkissa alkaa tapahtua
+- ![image](https://github.com/user-attachments/assets/e39c6984-99a2-451b-abe2-e8c05aa0ccf1)
+- Tässä etsin saman esimerkin aikaisemmasta, eli tuosta ./git/HEAD - kohdasta, jossa näkyy elvästi User-Agenttina tuo Nmap Scripting Engine
+- Seurasin samalla tuota URLia, joka vei tänne
+- ![image](https://github.com/user-attachments/assets/7af3e655-ef7f-4c60-bfbe-f0d832640b28)
+- Mietin siis, että tunnistaako nmap pelkästään jo tuosta ilmoituksesta, että kyseessä Apache?
+- Mutta hakee kuitenkin niitä Gitin hakemistoja löytämättä kuitenkaan mitään
+- User - Agent käytännössä edusstaa ihmistä, mutta Web - kontekstissa. Se antaa nettisivulle tietoon, kuka hakee tietoa.
 
 ## Lähteet:
 
+-User-Agent, mdn web docs_, Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/User-Agent, Luettu 08/04/2025
 - robots.txt, Wikipedia, (Rewieved 16/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Robots.txt, Luettu: 08/04/2025
+
