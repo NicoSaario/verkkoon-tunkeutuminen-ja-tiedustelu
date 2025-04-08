@@ -72,5 +72,15 @@ Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh
 - Loput journalctl, jonka kuvaus ja tarkoitus näyttävästi löytyy ```man journalctl```
 - ![image](https://github.com/user-attachments/assets/39adef26-efd4-4090-aa60-021e85602f49)
 
+- Käytännössä tän voi tehdä kahdella tavalla: Itse ensin navigoin kansioon, jossa access.log - tiedosto on ja käytin ```cat acces.log```
+- Teron vinkeistä löytyy ```sudo tail -F /var/log/apache2/access.log```. Käytännössä ne tekee muuten samaa, mutta kuten kuvankaappauksesta näkee, päivitin localhost - sivun ja se näyttää "livenä" sen, mitä tapahtuu, eli seuraa sitä logivirtaa jatkuvasti
+- ![image](https://github.com/user-attachments/assets/88d8d4a3-98af-445e-a9a6-acc4933612d4)
+- Analysoin tätä ensimmäistä riviä ![image](https://github.com/user-attachments/assets/2768dd0c-0881-4971-915f-fac2eaee70b6)
+- Aluksi näkee kellonajan, millon logi on kirjattu eli 08/4/2024 kello 14:28:07 ja UTC +3, eli Helsingin aikavyöhykkeellä mennään
+- ```*GET / HTTP/1.1*``` on hakupyyntö, jossa pyynto on tehty / eli juurisivulle, ```HTTP/1.1``` on protokolla, jota käytetään
+- ```200``` On statuskoodi(=https://umbraco.com/knowledge-base/http-status-codes/) ja tarkoittaa onnistunutta tapahtumaa https://umbraco.com/knowledge-base/http-status-codes/
+
+
+
 
 
