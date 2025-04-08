@@ -83,6 +83,29 @@ Diamond Model of Intrusion Analysis: What, Why, and How to Learn, David Tidmarsh
 - Ja curl... on se, mitä työkalua on käytetty pyyntöön, eli tässä on se ensimmmäinen testipyyntö, jonka lähetin käyttämällä ```curl localhost```
 
 
+## b) Nmapped. Porttiskannaa oma weppipalvelimesi käyttäen localhost-osoitetta ja 'nmap -A' päällä. Selitä tulokset. (Pelkkä http-portti 80/tcp riittää)
+- Napataan ensin netti pois päältä. Apache toimii silti paikallisesti
+
+- ![image](https://github.com/user-attachments/assets/508889f4-3b89-4a92-b23c-da61a804cf4c)
+
+- Suoritetaan komento ```nmap -A localhost```
+- Näkyy, että ollaan haettu localhost osoitetta 127.0.0.1
+- 80/tcp portti auki http yhteydelle ja, että se kuuluu Apachelle
+- Näkyy myös se, että mitä title ja header sisältää, eli voi tehdä jo havaintoja siitä, mitä siellä on
+- Network hops 0, eli varmistaa sen, että toimitaan paikallisesti
+- Lopussa vielä siitä varmistus, että yksi osoite skannattiin ja se kesti 9.06 - sekuntia
+
+## c) Skriptit. Mitkä skriptit olivat automaattisesti päällä, kun käytit "-A" parametria? (Näkyy avoimien porttinumeroiden alta, http-blah, http-blöh...).
+- Komennolla ```nmap man```löytyy selitys, joka kaikessa yksinkertaisuudessaan skannaa OS, version, scriptit ja tracerouten
+- ![image](https://github.com/user-attachments/assets/8adfd2aa-8877-4429-bc2f-f75c51938338)
+- Vähän avasin sitä jo edellisessä tehtävässä, mutta päällä olivat se Apachen "tervetulosivu" eli Default Page, joka toimii ja serverin otsikko
+- Eli http-title ja http-server-header - skriptit
+
+## d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
+
+- Olen jälleen /var/log/apache2 - kansiopolussa ja suoritan komennon ```cat access.log```.
+- 
+
 
 
 
