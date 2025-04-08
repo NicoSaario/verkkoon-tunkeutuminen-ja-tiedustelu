@@ -130,9 +130,16 @@ Käynnistellään Wireshark komentoriviltä ```wireshark```
 - Mietin siis, että tunnistaako nmap pelkästään jo tuosta ilmoituksesta, että kyseessä Apache?
 - Mutta hakee kuitenkin niitä Gitin hakemistoja löytämättä kuitenkaan mitään
 - User - Agent käytännössä edusstaa ihmistä, mutta Web - kontekstissa. Se antaa nettisivulle tietoon, kuka hakee tietoa.
+- Päätin tässä välissä tallentaa sen, ettei tule ihmeempiä tapahtumia
+![image](https://github.com/user-attachments/assets/283792fc-57b4-4bdd-9011-df29341f92fe)
+
+- Laitoin filtterin kohtiin, jossa on "nmap". Se siis etsii kaikki paketit, joka sisältää tekstin "nmap"
+- ![image](https://github.com/user-attachments/assets/69ab20e0-6eb0-4676-8014-4eb8465efa4a)
+- Täällä siis näkyy jo aiemmin tarkastellut kohdat, jossa ajetaan scriptejä ja joka sisältää tekstin "nmap"
 
 ## Lähteet:
 
 -User-Agent, mdn web docs_, Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/User-Agent, Luettu 08/04/2025
 - robots.txt, Wikipedia, (Rewieved 16/03/2025), Luettavissa: https://en.wikipedia.org/wiki/Robots.txt, Luettu: 08/04/2025
 
+wireshark-filter(4) Manual Page, Luettavissa: https://www.wireshark.org/docs/man-pages/wireshark-filter.html, Luettu 08/04/2025
