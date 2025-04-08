@@ -191,12 +191,36 @@ f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa
 - Olin unohtanut lisätä scriptin sinne, eli mutan vain komennon ```sudo nmap -A localhost --script-args http.useragent```
 - Ainoastaan yksi rivi näkyy!
 - ![image](https://github.com/user-attachments/assets/44a5f932-209c-4c36-ab7e-474ad2022ac1)
-- Eli aikaisemmat scriptimuutokset toimivat! Hurraa.
+- Eli aikaisemmat scriptimuutokset toimivat! Hurraa. Mutta kuten kohta huomataan, lowercheck näkyy siellä tarkoituksella
+
+- Sitten vielä Apachen logit:
 
 ## i) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
 
 - Sinällään tehtävä vaikuttaa helpolta, koska tein jo lähes saman aiemmin.
+![image](https://github.com/user-attachments/assets/f83df51d-3a2f-4892-9a5f-825c011b741b)
 
+```cd nselib```
+```ls```
+```sudoedit http.lua```
+
+Ctrl + F ja siihen lowercheck hakusanaksi Nanolla
+
+![image](https://github.com/user-attachments/assets/4c4ef14a-d5e3-4530-8ff2-36142f4edd7b)
+
+Käsittääkseni nämä kolme sen antaa. En muuta löytänyt, mikä siihen viittaisi.
+
+Vaihdoin siis nämä, vaikkakin uskoisin, että tähän tehtävään vain yksi riittää. Ärsyttävää olisi kuitenkin olla muokkaamassa sitä joka kerralla, joten käytännön syistä vaihdoin kaikki:
+![image](https://github.com/user-attachments/assets/e344752e-584e-4dd9-85b5-958c514928cf)
+- Ctrl + X -> Save -> Yes -> Enter
+
+Mitään ei löytynyt!
+
+![image](https://github.com/user-attachments/assets/9d7e83a0-31fa-4d6b-8055-dc8f357c288b)
+
+- Tässä vielä Wiresharkin näkemys aiheesta ja samasta paketista, jota aikasemmin tutkittiin:
+- ![image](https://github.com/user-attachments/assets/2d1c91ed-ee97-4203-a9ec-debc1bba8670)
+- Nyt on User-Agent muuttunut 1\r\n ja ilmeisesti jokin mennyt pieleen, koska 
 
 ## Lähteet:
 
