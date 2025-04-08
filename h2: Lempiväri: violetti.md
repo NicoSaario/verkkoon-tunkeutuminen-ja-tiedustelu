@@ -138,7 +138,7 @@ Käynnistellään Wireshark komentoriviltä ```wireshark```
 - ![image](https://github.com/user-attachments/assets/69ab20e0-6eb0-4676-8014-4eb8465efa4a)
 - Täällä siis näkyy jo aiemmin tarkastellut kohdat, jossa ajetaan scriptejä ja joka sisältää tekstin "nmap"
 
-f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa on sana "nmap".
+## f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa on sana "nmap".
 - Tähän Tero oli ystävällisesti vinkannut jo komennon ```sudo ngrep -d lo -i nmap```
 - Piti kuitenkin manuaalista tutkita, mitä se tekee
 - ```-i``` ei kiinnosta, onko sana TERO, tero vai TeRo, se hakee sen joka tapauksessa. Tässä tapauksessa sitä ei kiinnosta, onko nmap MiTeN kirjoitettu
@@ -181,6 +181,18 @@ f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa
 - ![image](https://github.com/user-attachments/assets/c03c4b07-3c79-411f-8dbf-766cfaea1b7c)
 - Laitoin sen varmuuden vuoksi vielä tänne
   ![image](https://github.com/user-attachments/assets/c5c0a68c-c6a3-46c3-be43-4441c2e858c2)
+
+
+Edit: Tajusin viimeisen tehtävän kohdalla, että olin nähtävästi tehnyt vähän eri lailla tämän tehtävän, miten se oli tarkoitettu eli hypännyt suoraa scriptien muokkaamiseen, teen tämän nyt "tarkoitetulla tavalla".
+
+![image](https://github.com/user-attachments/assets/a4c56b24-04eb-4a23-8c24-1498334f73e2)
+
+Ja jos nyt katsotaan tuota vaikkapa Wiresharkilla, lopputuloksessa näämme asetetun User-Agentin
+
+![image](https://github.com/user-attachments/assets/00f8b626-6c27-480d-9c8a-6ea7d85319ef)
+
+Apachen lokit: ![image](https://github.com/user-attachments/assets/c85a8aaf-6a36-4689-9636-f619deebc25f)
+
 
 ## h) Pienemmät jäljet. Porttiskannaa weppipalvelimesi uudelleen localhost-osoitteella. Tarkastele sekä Apachen lokia että siepattua verkkoliikennettä. Mikä on muuttunut, kun vaihdoit user-agent:n? Löytyykö lokista edelleen tekstijono "nmap"?
 
