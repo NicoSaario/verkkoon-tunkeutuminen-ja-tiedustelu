@@ -75,6 +75,13 @@ URH
 - Valitse läjä ykkösiä ja nollia valitaksesi monta kokonaista symbolia
 - Jos on vaikkapa 1512 on näytteiden pituus ja 6 symbolia valittu -> 1512/6 = 252, josta tulee Bit Lenght -> Error Tolerance pieni, esim. 10 -> Pause Threshold 4 (URH pilkkoo signal framet, kun on isoja rypäkkeitä nollia)
 - Kehykset, joilla on symbolinen rakenne -> Decodetaan -> Analysis ja ainoastaan se signal
+- Eli koska "11111001" on spekulaatiota ja arvailua, luodaan asetuksista se helpommin ymmärrettäväksi. Poistetaan "1111001" - alku ja käännetään se peilikuvaksi. Morse Code ymmärtää signaalia toisinpäin ja säädetään se niin, että lyhyt signaali tarkoittaa yhtä asiaa, pitkä toista
+- Sen jälkeen URH näyttää tulokseksi "000101001000" tai 0x148 hex
 
+rtl_433
+
+- URH - analyysistä saatiin pulssien pituusdeksi 252 -> 250k näytettä sekunnissa -> Pulssi tai väli on 1008 mikrosekuntia
+- OOK_PPM eli Pulse Position Modulation pitää tietää juuri se arvo. Syötetään tieto nollavälin oletusleveydestä, ykkösvälin oletusleveydestä, nollauskestosta (arvioidaan vähän ylöspäin) ja lopputulos: ```rtl_433 -R 0 -r g001_433.92M_250k.complex16u -X n=SAMPLE1,m=OOK_PPM,s=1008,l=3024,r=3200```
+- Sen jälkeen hienosäätöä toleranssin suhteen, jotta saadaan tarkempaa tulosta
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
