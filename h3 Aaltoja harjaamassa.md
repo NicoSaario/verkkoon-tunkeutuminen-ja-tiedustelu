@@ -13,7 +13,7 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
-#### Hubacek 2019: [Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs](https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s) (Video, alkaen 3:19 ja päättyen 7:40. Yhteensä noin 4 min.)
+### Hubacek 2019: [Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs](https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s) (Video, alkaen 3:19 ja päättyen 7:40. Yhteensä noin 4 min.)
 
 - Taajuuden oikeaoppisuus on hyvä tarkistaa ensin, esimerkiksi Spectrum Analyzer - työkalulla
 - Tarvitaan vain Frequency
@@ -21,7 +21,7 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 - Maalaamalla lyhyimmän viestin voi selvittää Bit Lenghtin, jos sitä ei automaattisesti tunnisteta
 
 
-#### Cornelius 2022: [Decode 433.92 MHz weather station data](https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html)
+### Cornelius 2022: [Decode 433.92 MHz weather station data](https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html)
 
 - Tässä tutkitaan sääasemaa, joka näyttää lämpötilan ja kosteuden sisälle sekä jopa kolmeen langattomaan sensoriin. Tarkoituksena myöhemmin rakentaa löydöksistä oma sensori, joka oli hajalla.
 - Lähtökohtana ainoastaan taajuus 433.92 MHz.
@@ -64,7 +64,7 @@ URH - [Universal Radio Hacker](https://github.com/jopohl/urh)
 
 
 
-#### Vapaaehtoinen, vaikeahko: Lohner 2019: Decoding ASK/OOK_PPM Signals with URH and rtl_433
+### Vapaaehtoinen, vaikeahko: Lohner 2019: Decoding ASK/OOK_PPM Signals with URH and rtl_433
 
 - Tässä decodetaan rtl_433 Signal I/Q Sample Files käyttäen URHia ja rtl_433 decoderia
 
@@ -83,5 +83,8 @@ rtl_433
 - URH - analyysistä saatiin pulssien pituusdeksi 252 -> 250k näytettä sekunnissa -> Pulssi tai väli on 1008 mikrosekuntia
 - OOK_PPM eli Pulse Position Modulation pitää tietää juuri se arvo. Syötetään tieto nollavälin oletusleveydestä, ykkösvälin oletusleveydestä, nollauskestosta (arvioidaan vähän ylöspäin) ja lopputulos: ```rtl_433 -R 0 -r g001_433.92M_250k.complex16u -X n=SAMPLE1,m=OOK_PPM,s=1008,l=3024,r=3200```
 - Sen jälkeen hienosäätöä toleranssin suhteen, jotta saadaan tarkempaa tulosta
+
+
+## a) WebSDR. Etäkäytä WebSDR-ohjelmaradiota, joka on kaukana sinusta ja kuuntele radioliikennettä. Radioliikenne tulee siepata niin, että radiovastaanotin on joko eri maassa tai vähintään 400 km paikasta, jossa teet tätä tehtävää. Käytä esimerkkinä julkista, suurelle yleisölle tarkoitettua viestiä, esimerkiksi yleisradiolähetystä. Kerro löytämäsi taajuus, aallonpituus ja modulaatio. Kuvaile askeleet ja ota ruutukaappaus. (Tehtävässä ei saa ilmaista sellaisen viestin sisältöä tai olemassaoloa, joka ei ole tarkoitettu julkiseksi. Voit sen sijaan kuvailla, miten sait julkisen radiolähetyksen kuulumaan kaiuttimistasi. Julkisten, esimerkiksi yleisradiolähetysten sisältöä saa tietysti kuvailla.)
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
