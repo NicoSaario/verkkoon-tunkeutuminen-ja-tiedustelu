@@ -17,9 +17,38 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 - Taajuuden oikeaoppisuus on hyvä tarkistaa ensin, esimerkiksi Spectrum Analyzer - työkalulla
 - Tarvitaan vain Frequency
-- Samaisella työkalulla nähdään se, miten 
+- Samaisella työkalulla nähdään se, miten lähetys tallentuu
+- Maalaamalla lyhyimmän viestin voi selvittää Bit Lenghtin, jos sitä ei automaattisesti tunnisteta
 
-#### Cornelius 2022: Decode 433.92 MHz weather station data
+
+#### Cornelius 2022: [Decode 433.92 MHz weather station data](https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html)
+
+- Tässä tutkitaan sääasemaa, joka näyttää lämpötilan ja kosteuden sisälle sekä jopa kolmeen langattomaan sensoriin. Tarkoituksena myöhemmin rakentaa löydöksistä oma sensori, joka oli hajalla.
+- Lähtökohtana ainoastaan taajuus 433.92 MHz.
+- Käytetty decoderia (rtl_433), joka decodesi sen lämpötilan ja ilmankosteuden sekä sai selville sen olevan Nexus-TH.
+
+URH - [Universal Radio Hacker](https://github.com/jopohl/urh)
+
+- Voi analysoida, muuttaa ja uudelleenlähettää mitä tahansa signaalia
+
+1. Spectrum Analyzer
+   - SDR device - aseta vastaanottava taajuus ja "gain"
+   - Odota signaalia
+   - Nosta "gain", jos ei hetkeen näy mitään ja laite lähellä sekä lähettämässä RF
+   - Ota ylös Frequency ja Gain, kun näkyy
+   - Käytä spectrogrammia löytääksesi oikean signaalin taajuuden
+
+2. Luo uusi projekti
+   - Bandwith ja Sample rate voi nostaa 1M, koska signaali on pienikaistainen
+   - Vain yksi osallistuja ("Participant") tai poista molemmat
+
+3. Nauhoita käyttäen File - menua
+  - Taajuus vähän ohi, eli 20..100 kHZ siitä signaalista, joka saatiin aikaisemmin
+  - Tärkeää nauhoittaa tarpeeksi pitkään, jotta saadaan ainakin kaksi rypästä
+  - Tallenna, tyhjennä jos ei mitään
+  - Amplitudesignaalin pitäisi olla vähintään 2x noise amplitude
+  - Drägää nauhoitus vasemmalta Interpretatiton - lehdelle
+  - Kannattaa katsoa ensin aika kahden onnistuneen lähetyksen välillä tai se, kuinka usein sensori lähettää dataa
 
 
 #### Vapaaehtoinen, vaikeahko: Lohner 2019: Decoding ASK/OOK_PPM Signals with URH and rtl_433
