@@ -87,4 +87,24 @@ rtl_433
 
 ### a) WebSDR. Etäkäytä WebSDR-ohjelmaradiota, joka on kaukana sinusta ja kuuntele radioliikennettä. Radioliikenne tulee siepata niin, että radiovastaanotin on joko eri maassa tai vähintään 400 km paikasta, jossa teet tätä tehtävää. Käytä esimerkkinä julkista, suurelle yleisölle tarkoitettua viestiä, esimerkiksi yleisradiolähetystä. Kerro löytämäsi taajuus, aallonpituus ja modulaatio. Kuvaile askeleet ja ota ruutukaappaus. (Tehtävässä ei saa ilmaista sellaisen viestin sisältöä tai olemassaoloa, joka ei ole tarkoitettu julkiseksi. Voit sen sijaan kuvailla, miten sait julkisen radiolähetyksen kuulumaan kaiuttimistasi. Julkisten, esimerkiksi yleisradiolähetysten sisältöä saa tietysti kuvailla.)
 
+- Tutkin sivustoa aika pitkään ihan vain omastakin mielenkiinnosta. Päädyin lopulta http://remoteradio.changeip.org:8073/ - osoitteeseen, jossa painoin ensin "pop-up" - ilmoituksen, jossa kysyttiin, halutaanko audio päälle - painoin laatikon aktiiviseksi. Sivusto sijaitsee siis Bedford, England, Uk, jonne matkaa lähes 3000 km.
+- Sen jälkeen aukesi tällainen näkymä: ![image](https://github.com/user-attachments/assets/f8ab06d4-c6a4-4f85-b102-20c519557e61)
+- Sisältää siis hyvin paljon liikennettä. Huomiota herätti erityisesti tuo 900 - taajuus, jossa näyttää olevan paljon liikennettä
+- Zoomasin siis lähemmäs, asetin itseni sinene (ihan vain klikkaamalla), painoin Modeksi AM ja levitin filtteriä "filter shift - wider", koska ääni vähän pätki välillä. Lopulta asettelin sen manuaalisesti.
+
+![image](https://github.com/user-attachments/assets/ea717fbe-e090-4a00-9b59-f8568149bc53)
+
+- Livessä kuuluu tällä hetkellä jalkapallo - ottelu PSG vastaan Aston Villa. Varmistin sen vielä [sivuilta](https://www.bbc.co.uk/sounds/schedules/bbc_radio_five_live), että näin on
+
+![image](https://github.com/user-attachments/assets/a0556065-64bf-4ca1-955a-6a893f940d66)
+
+- Taajuus 909.04 MHz
+- Aallonpituus on 300/909.04 MHz ~ 0,33m pyöristettynä, eli Aallonpituus = 300/Aallonpituus MHz
+- Ja modulaatio AM
+
+![image](https://github.com/user-attachments/assets/b8da9069-d306-4b4e-85c1-2857cf3fbcd2)
+
+## b) rtl_433. Asenna rtl_433 automaattista analyysia varten. Kokeile, että voit ajaa sitä. './rtl_433' vastaa "rtl_433 version 25.02 branch..."
+
+
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
