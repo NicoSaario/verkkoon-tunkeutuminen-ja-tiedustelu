@@ -49,10 +49,32 @@ URH - [Universal Radio Hacker](https://github.com/jopohl/urh)
   - Amplitudesignaalin pitäisi olla vähintään 2x noise amplitude
   - Drägää nauhoitus vasemmalta Interpretatiton - lehdelle
   - Kannattaa katsoa ensin aika kahden onnistuneen lähetyksen välillä tai se, kuinka usein sensori lähettää dataa
+  - Create signal from selection
+
+4. Demodulointi
+   - AM = ASK (amplitude shift keying)
+   - HUOMIO: URHissa näkyvä frequency ei ole oikea signaalin taajuus! Tärkeä ainoastaan FSK - lähetyksille
+   - Samples/Symbol = Bitti modulaatiossa -> Bitti dataa edustaa symbolien määrä -> Useimmilla PDM järjeselmillä kaantoaaltopurkauksen kesto vastaa yhtä symbolia, kun seuraavat välit ovat sen monikertoja
+   - Jos lähetyksesä tauko - modulaatio-yhdistelmäruudun viereinen asetuspainike -> Pause threshold
+   - Tarkista noise level
+
+5. Digital analysis
+   - Edit -> Decoding
+   - Signaali pitäisi kääntää -> Morse Code
+
 
 
 #### Vapaaehtoinen, vaikeahko: Lohner 2019: Decoding ASK/OOK_PPM Signals with URH and rtl_433
 
+- Tässä decodetaan rtl_433 Signal I/Q Sample Files käyttäen URHia ja rtl_433 decoderia
+
+URH
+- Signal view -> Spectrogram -> Korosta signaali, oikeeklikkaus -> Apply Bandpass Filter (kohinan vähentäminen)
+- Bit lenght -> joku pieni, esim. 10
+- Error Tolerance vielä pienempi, esim. 1
+- Valitse läjä ykkösiä ja nollia valitaksesi monta kokonaista symbolia
+- Jos on vaikkapa 1512 on näytteiden pituus ja 6 symbolia valittu -> 1512/6 = 252, josta tulee Bit Lenght -> Error Tolerance pieni, esim. 10 -> Pause Threshold 4 (URH pilkkoo signal framet, kun on isoja rypäkkeitä nollia)
+- Kehykset, joilla on symbolinen rakenne -> Decodetaan -> Analysis ja ainoastaan se signal
 
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
