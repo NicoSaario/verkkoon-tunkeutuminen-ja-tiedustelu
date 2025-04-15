@@ -106,5 +106,34 @@ rtl_433
 
 ## b) rtl_433. Asenna rtl_433 automaattista analyysia varten. Kokeile, että voit ajaa sitä. './rtl_433' vastaa "rtl_433 version 25.02 branch..."
 
+- Yritin heti ```sudo apt-get install rtl_433```, mutta se ei toiminut, joten menin https://github.com/merbanan/rtl_433 ja katsoin, että se on ```rtl-433```, joten asensin sen sieltä
+
+- Asennuksen jälkeen katsoin, missä se sijaitsee "whereis" - komennolla, navigoin sinne ja suoritin.
+- Vastasi Versiolla, joten se toimii.
+
+![image](https://github.com/user-attachments/assets/89a569b6-3fb6-4556-8258-22428542cf41)
+
+
+## c) Automaattinen analyysi. Mitä tässä näytteessä tapahtuu? Mitä tunnisteita (id yms) löydät? Converted_433.92M_2000k.cs8. Analysoi näyte 'rtl_433' ohjelmalla.
+
+- Latasin sen Teron sivuilta, suoraan Downloads - kansioon se menee, joten sieltä se on helppo myös ajaa suoraan
+
+![image](https://github.com/user-attachments/assets/7e2248da-48a8-4c87-ac00-b4718ec148cc)
+
+1. Siitä löytyy id, eli 875315
+2. House Code, joka on sama.
+3. Suojaustoimintoja, kuten Nexa-Security ja Proove-Security sekä ilmeisesti jonkinlainen Plug-ray-osoitin kaukopistokkeella [löytyi täältä](https://klikaanklikuit.nl/product/stekkerdimmerset-100-watt-led/).
+4. Group call = No tai OFF
+5. Unit 3
+6. Dim
+7. Kanavat
+8. Eri aikoja
+
+![image](https://github.com/user-attachments/assets/aa7b17cb-4847-4e18-bf78-f075b7add6fb)
+
+
+![image](https://github.com/user-attachments/assets/dbaed6d0-5ef2-4121-9573-0c1870349c1a)
+
+
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
