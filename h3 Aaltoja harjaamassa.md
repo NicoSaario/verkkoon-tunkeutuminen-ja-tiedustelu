@@ -264,6 +264,10 @@ Jokainen painallus tekee lisäksi samaa asiaa ja on yhtä pitkä
 
 Kuten näkee, aallot liikkuvat samassa tahdissa ja samalla taajuudella, kyseessä on ASK - modulaatio, koska bitit 1 ja 0 toimii päälle/pois
 
+Jos alhaalta valitsee "Signal view: Demodulated" - näkee sen viivoina. Eli rakenne on molemmissa tismalleen sama. 1 --> Tapahtuu 0 --> Pieni tauko, toisto, toisto, toisto
+
+![image](https://github.com/user-attachments/assets/36756f36-f3ed-44cd-b71d-0ec124ed2467)
+
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
 
 Using ‘diff’ in Linux: A Comparison Command Guide, By Gabriel Ramuglia On December 11, 2023, Luettavissa: https://ioflood.com/blog/diff-linux-command/, Luettu: 16/04/2025
