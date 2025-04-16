@@ -258,6 +258,9 @@ Jokainen painallus tekee lisäksi samaa asiaa ja on yhtä pitkä
 - En mitään tarkkoja mittauksia tehny, mutta lähellä oltiin! [Tässä](https://www.stockmann.com/hobstar-libbey-hobstar-dof--lasi-350-ml/1170457753-1.html) siis lasi vielä, jos jotain jostain ihmeellisestä syystä kiinnostaa kokeilla.
 - Tarkka tilavuus olisi siis ollut 350ml, mutta näillä mennään.
 
+- Jos sen kääntää matkaksi, vesipisara tippuu noin 10m/s nopeudella ([lähde](https://gpm.nasa.gov/resources/faq/how-fast-do-raindrops-fall))
+- Vesipisara ehtii tuossa ajassa tippua 2,62 millimetriä eli hyvin hyvin hyvin vähän (ChatGPT jälleen laskurina)
+
 - Voidaan vielä zoomata lähemmäs ja tarkistaa
 
 ![image](https://github.com/user-attachments/assets/12018737-cbd4-47f4-a380-370c7a911ff2)
