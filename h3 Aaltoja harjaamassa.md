@@ -183,10 +183,69 @@ Löysin error - logeista, että Cython puuttuu
 Update: Tästähän tuli melkoinen soppa. Tehtävä näyttää hyvinkin yksinkertaiselta, mutta joskus toteutus voi olla ihan toinen. Noin 2h lokien, surffailun ja pyörimisen jälkeen ollaan vieläkin samassa tilanteessa. Rikoin jopa Kalin paketit käyttämällä ```--break-system-packages``` - komentoa. Ilmeisesti uusi päivitys Kalissa estää suoraa pipx käytön "externally-managed-environment" ja yritän asentaa sen nyt sitten virtualenv kautta.
 
 - Mitä siis kokeilin?
-- Asentaa pipx uudelleen, pip jne. python3, siirtelin py3 kirjastoja, yritin asentaa sen käyttämällä ```--break-system-packages```, joka lopulta rikkoi Kalin hetkeksi (Reboot CLI käynnistys, update ei toiminut jne), asensin mahdolliset puuttuvat riippuvuudet (libxml2-dev, libxslt1-dev, zlib1g-dev) ja vaikka mitä muuta.
+- Asentaa pipx uudelleen, pip jne. python3, siirtelin py3 kirjastoja, yritin asentaa sen käyttämällä ```--break-system-packages```, joka lopulta rikkoi Kalin hetkeksi (Reboot CLI käynnistys, update ei toiminut jne), asensin mahdolliset puuttuvat riippuvuudet (libxml2-dev, libxslt1-dev, zlib1g-dev) ja *vaikka mitä muuta*.
 
-- 
+- Tässä kävi nyt niin, että kokeilin myös virtualenvin kautta ja sekään ei toiminut.
+- Tein testin Tunkeutumistestaus - koneella, jossa myös Kali Linux. Sama ongelma
+- Meni hermo - Siirryin Debian 12 - koneelle, jota käytin aikaisemmalla "Sovellusten hakkerointi ja haavoittuvuudet" - kurssilla ja se lähti laakista toimimaan.
 
+- Homma jatkuu siis nyt vihdoin turhien ponnisteluiden jälkeen jonkun kolmen tunnin venkslaamisen jälkeen
+- Käytin siis
+
+   ```
+  sudo apt-get install pipx
+  pipx install urh
+  pipx ensurepath
+  ```
+
+![image](https://github.com/user-attachments/assets/6d1a6fd5-1fa2-43d8-8cdb-81bed360334f)
+
+- Siinä lukeekin, että pitää aukaista uusi terminaali tai "re-log"
+
+- Ja siinä on urh auki
+
+![image](https://github.com/user-attachments/assets/cbb9ebeb-941d-4380-9a0e-45649329461f)
+
+
+## Tarkastele näytettä 1-on-on-on-HackRF-20250412_113805-433_912MHz-2MSps-2MHz.complex16s. Siinä Nexan pistorasian kaukosäätimen valon 1 ON -nappia on painettu kolmesti. Käytä Ultimate Radio Hacker 'urh' -ohjelmaaa
+
+- Aukeaa siis valikosta "File - Open"
+
+![image](https://github.com/user-attachments/assets/4da5da38-54ca-48e4-972e-683e90555843)
+
+
+### f) Yleiskuva. Kuvaile näytettä yleisesti: kuinka pitkä, millä taajuudella, milloin nauhoitettu? Miltä näyte silmämääräisesti näyttää?
+
+![image](https://github.com/user-attachments/assets/6d97a288-1c26-4b84-919a-ddc6681630f0)
+
+Tähän siis aukesi seuraava näkymä. Ensimmäisenä tuli mieleen tarkistaa tuolta vähän tietoja lisää. 
+
+Ensimmäisenä lueskelin tuota tiedostonimeä, josta saa selville sen, milloin näyte on tallennettu eli 12/04/2025 ja taajuus, joka näyttäisi olevan 433.912MHz. 
+
+Tämän jälkeen tulee tiedoston koko (10,47MB), Oma tallennusaika eli milloin latasin sen järjestelmään, Samplet joita on huikea 5 491 580 - kappaletta, sample rate 1,0MHz ja aika eli 5,49s. Ihmettelen vain, miksi se on tiedostossa 2MSps ja valittuna 1,0 Sps.
+
+![image](https://github.com/user-attachments/assets/b87d1abf-de3c-414b-a452-7ec00415dcad)
+
+Muutetaan vielä tuo Sample Rate samaan, kuin mitä tiedostossa oli annettu valmiiksi, eli 2,0M Sps.
+
+Kuten näkyy, kesto puolittui: 
+
+![image](https://github.com/user-attachments/assets/e85aa1ba-e609-4abb-b04d-2a65ae937241)
+
+
+Näyte näyttää hyvinkin siltä, joka oli kuvattu - jokainen painallus näkyy omana bittijononaan ja hyvin pitkälti sama rakenne
+
+![image](https://github.com/user-attachments/assets/31cc6836-d6cd-4442-9ac7-044d4e5a271e)
+
+Jokainen painallus tekee lisäksi samaa asiaa ja on yhtä pitkä
+
+![image](https://github.com/user-attachments/assets/d666befa-5949-42cf-bbc2-ab8f9fcd0fbf)
+
+![image](https://github.com/user-attachments/assets/2a738e1f-8fa4-4f24-8381-2addd6c27e83)
+
+
+
+### g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
 
