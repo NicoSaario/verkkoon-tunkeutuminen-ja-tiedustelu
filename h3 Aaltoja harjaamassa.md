@@ -180,7 +180,12 @@ Löysin error - logeista, että Cython puuttuu
 ![image](https://github.com/user-attachments/assets/c3439e2d-4c0f-4b92-8df9-3ca8803bd0f8)
 
 
+Update: Tästähän tuli melkoinen soppa. Tehtävä näyttää hyvinkin yksinkertaiselta, mutta joskus toteutus voi olla ihan toinen. Noin 2h lokien, surffailun ja pyörimisen jälkeen ollaan vieläkin samassa tilanteessa. Rikoin jopa Kalin paketit käyttämällä ```--break-system-packages``` - komentoa. Ilmeisesti uusi päivitys Kalissa estää suoraa pipx käytön "externally-managed-environment" ja yritän asentaa sen nyt sitten virtualenv kautta.
 
+- Mitä siis kokeilin?
+- Asentaa pipx uudelleen, pip jne. python3, siirtelin py3 kirjastoja, yritin asentaa sen käyttämällä ```--break-system-packages```, joka lopulta rikkoi Kalin hetkeksi (Reboot CLI käynnistys, update ei toiminut jne), asensin mahdolliset puuttuvat riippuvuudet (libxml2-dev, libxslt1-dev, zlib1g-dev) ja vaikka mitä muuta.
+
+- 
 
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
