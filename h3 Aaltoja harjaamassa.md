@@ -255,6 +255,8 @@ Jokainen painallus tekee lisäksi samaa asiaa ja on yhtä pitkä
 - Tässä taas ChatGPT toimi laskurina ja 1.60s / 262 mikrosekuntia pyöristyy 6106.
 - Yksi aalto ehti siis toistaa itseään 6106 kertaa sinä aikana, kun täysin vesilasia
 
+- En mitään tarkkoja mittauksia tehny, mutta lähellä oltiin! [Tässä](https://www.stockmann.com/hobstar-libbey-hobstar-dof--lasi-350-ml/1170457753-1.html) siis lasi vielä, jos jotain jostain ihmeellisestä syystä kiinnostaa kokeilla.
+- Tarkka tilavuus olisi siis ollut 350ml, mutta näillä mennään.
 
 - Voidaan vielä zoomata lähemmäs ja tarkistaa
 
