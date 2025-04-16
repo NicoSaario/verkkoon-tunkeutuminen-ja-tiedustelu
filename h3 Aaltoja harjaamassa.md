@@ -165,8 +165,22 @@ Sain kuitenkin virheilmoituksen, ettei sitä voi asentaa.
 
 ![image](https://github.com/user-attachments/assets/30c19b6c-f01c-41bf-b745-438a3d717a4e)
 
-Huomasin, että pipx on asennettu valmiiksi, mutta ei "upgraded".
-Käytin siis ```sudo apt-get upgrade```, joka tällä kertaa syystä tai toisesta unohtunut.
+Varmistin vielä ```sudo apt-get upgrade```, että kaikki on varmasti hyvin
+
+Kaikki näyttää olevan kunnossa:
+
+![image](https://github.com/user-attachments/assets/44c8c18d-5a2b-46ca-af07-3d50f63e1eff)
+
+Löysin error - logeista, että Cython puuttuu
+
+![image](https://github.com/user-attachments/assets/2ad6b35d-80a1-4053-af98-d021b308c7c5)
+
+```python3 -m pip install cython```
+
+![image](https://github.com/user-attachments/assets/c3439e2d-4c0f-4b92-8df9-3ca8803bd0f8)
+
+
+
 
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
