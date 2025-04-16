@@ -274,9 +274,6 @@ Jos alhaalta valitsee "Signal view: Demodulated" - näkee sen viivoina. Eli rake
 
 ## h) Vapaaehtoinen: Sdr++. Kokeile sdr++ -sovellusta ja esittele sillä jokin "hei maailma" -tyyppinen esimerkki.
 
-
-## h) Vapaaehtoinen: Sdr++. Kokeile sdr++ -sovellusta ja esittele sillä jokin "hei maailma" -tyyppinen esimerkki.
-
 ## i) Vapaaehtoinen, vaikeahko: GNU Radio. Asenne GNU Radio ja tee sillä yksinkertainen "Hei maailma".
 
 Ilmeisesti se asentui jo samalla, kun tein tämän aiemmin: 
@@ -324,15 +321,56 @@ Yhdistellään ne kuvan mukaisesti Out ja IN
 
 ![image](https://github.com/user-attachments/assets/7fc02ae3-998d-439a-8e8f-160abeb48414)
 
+Se näytti lopulta siis tältä:
+
+![image](https://github.com/user-attachments/assets/91e6c1b7-7101-4ce7-bf5d-df558e9ab6ef)
+
+Kyseessä ei kai varsinaisesti se "Hei maailma" ole, mutta toistaiseksi joudun jättämään testailut kesken. Aika loppui kesken 17/04/2025
 
 
 ![image](https://github.com/user-attachments/assets/ab27173b-b709-4d2e-b65b-d08eac48c79c)
 
+- Olisin lähtenyt seuraavaksi rakentamaan viestiä siitä
 
-Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
+
+## Lähteet:
+
+Verkkoon tunkeutuminen ja tiedustelu, Tero Karvinen, Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/, Luettu 16/04/2025
+
+Decoding ASK/OOK_PPM Signals with URH and rtl_433, @klohner, Luettavissa: https://github.karllohner.com/SDR/Decoding/Example_2019-01-24/, Luettu 16/04/2025
+
+Decode 433.92 MHz weather station data, Posted by:  Cornelius, Updated 1/2024, Luettavissa:  https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html, Luettu 15/04/2025
+ 
+Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
+
+ur, Dr.-Ing.Johannes Pohl, @jopohl, Luettavissa: hhttps://github.com/jopohl/urh?tab=readme-ov-file#Installation, Luettu 15/04/2025
 
 Using ‘diff’ in Linux: A Comparison Command Guide, By Gabriel Ramuglia On December 11, 2023, Luettavissa: https://ioflood.com/blog/diff-linux-command/, Luettu: 16/04/2025
 
+rtl_433, Benjamin Larsson @merbanan ja hyvin moni muu, Luettavissa: https://github.com/merbanan/rtl_433, Luettu 16/04/2025
+
+Gqrx SDR, Open source software defined radio by Alexandru Csete OZ9AEC, Luettavissa: https://www.gqrx.dk/, Luettu 16/04/2025
+
+How fast do raindrops fall?, Nasa, Luettavissa: https://gpm.nasa.gov/resources/faq/how-fast-do-raindrops-fall, Luettu 16/04/2025
 
 Modulation and Different Types of Modulation, March 22, 2024
 By Ravi Teja, Luettavissa: https://www.electronicshub.org/modulation-and-different-types-of-modulation/, Luettu 16/04/2025
+
+Stekkerdimmerset – 100 Watt led | ACC2-250R, KlikAanKlikUit,  Katsottavissa: https://klikaanklikuit.nl/product/stekkerdimmerset-100-watt-led/, Katsottu 16/04/2025
+
+Hobstar Libbey Hobstar DOF -lasi 350 ml, Stockmann, Katsottavissa: https://www.stockmann.com/hobstar-libbey-hobstar-dof--lasi-350-ml/1170457753-1.html, Katsottu 16/04/2025 
+
+You need Cython to build URH's extensions!, @tomcass240, 2023, vastattu @jopohl, Luettavissa: https://github.com/jopohl/urh/issues/1064, Luettu 16/04/2025
+
+ChatGPT matematiikan professorina
+
+Microsecond, Wikipedia, Luettavissa: https://en.wikipedia.org/wiki/Microsecond, Luettu 16/04/2025
+
+quick and dirty tutorial on how to use #Universal #Radio, Dmitry Janushkevich @InfoSecDJ, Luettavissa: https://devsforgood.com/thread/quick-and-dirty-tutorial-using-universal-radio-hacker-urh-for-practical-applications, Luettu 16/04/2025
+
+pip install -r requirements.txt is failing: "This environment is externally managed" [duplicate], (koko ketju), luettavissa: https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana, Luettu 16/04/2025
+
+Barney's online radios, websdr, Katsottavissa: http://remoteradio.changeip.org:8073/, Katsottu 15/04/2025
+
+Radio 5 Live Schedule, BBC, Katsottavissa: https://www.bbc.co.uk/sounds/schedules/bbc_radio_five_live, Katsottu 15/04/2025
+
