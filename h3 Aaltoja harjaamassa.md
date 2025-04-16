@@ -134,6 +134,18 @@ rtl_433
 
 ![image](https://github.com/user-attachments/assets/dbaed6d0-5ef2-4121-9573-0c1870349c1a)
 
+## d) Too compex 16? Olet nauhoittanut näytteen 'urh' -ohjelmalla .complex16s-muodossa. Muunna näyte rtl_433-yhteensopivaan muotoon ja analysoi se. Näyte Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s
 
+- Eli ensin latasin sen [täältä](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/). Koitin ensin suoraan ajaa sitä:
+
+![image](https://github.com/user-attachments/assets/1c95fe79-ea36-45a3-a0bd-4b6d0d826248)
+
+Mitään ei kuitenkaan tapahtunut. Mietin, että riittääkö, jos muuttaa tiedostoformaattia. Hetken yritin etsiä ratkaisua, mutta törmäsin lopulta Teron vinkkeihin, jossa complex16s vaihtuu cs8.
+
+Tehdään siis se:
+
+![image](https://github.com/user-attachments/assets/12350e18-25ce-44f9-bed4-b74ab84003d1)
+
+Tämähän on tismalleen sama tiedosto, mitä analysoitiin aikaisemmin? 
 
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
