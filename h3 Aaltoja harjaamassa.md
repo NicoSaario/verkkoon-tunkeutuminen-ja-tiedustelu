@@ -271,6 +271,64 @@ Jos alhaalta valitsee "Signal view: Demodulated" - näkee sen viivoina. Eli rake
 
 ![image](https://github.com/user-attachments/assets/36756f36-f3ed-44cd-b71d-0ec124ed2467)
 
+
+## h) Vapaaehtoinen: Sdr++. Kokeile sdr++ -sovellusta ja esittele sillä jokin "hei maailma" -tyyppinen esimerkki.
+
+
+## h) Vapaaehtoinen: Sdr++. Kokeile sdr++ -sovellusta ja esittele sillä jokin "hei maailma" -tyyppinen esimerkki.
+
+## i) Vapaaehtoinen, vaikeahko: GNU Radio. Asenne GNU Radio ja tee sillä yksinkertainen "Hei maailma".
+
+Ilmeisesti se asentui jo samalla, kun tein tämän aiemmin: 
+
+Homma lähti käyntiin ```sudo apt-get install gqrx```
+- Virheilmoitus, ettei sellaista ole, vaan se on ```gqrx-sdr```
+
+![image](https://github.com/user-attachments/assets/af6c0717-0ce7-4c4a-b598-38a39ba71142)
+
+![image](https://github.com/user-attachments/assets/4a8dec0c-8d0a-45e3-9e9d-5b92da288a5b)
+
+Se on asenneltu ja pääsee "Applications" - gnuradio
+
+Seuraillaan vähän ohjeita 
+Eli id = sineWaveFlowgraph
+Titleksi se Hello World
+- Apply -> Ok
+![image](https://github.com/user-attachments/assets/9a05e87b-c9d3-4611-81ea-f96af2bf3b31)
+
+Ctrl + F ja Signal Source
+
+![image](https://github.com/user-attachments/assets/8af81104-18c9-409b-9e61-7b690eb30bfb)
+
+Seuraavaksi Throttle
+
+![image](https://github.com/user-attachments/assets/522abe0e-45d2-4239-a5ce-52d4d4aceee9)
+
+Sitten QT GUI Frequency Sink
+
+![image](https://github.com/user-attachments/assets/764d5b0f-46a7-4cc3-9f73-83481248dc4c)
+
+
+Lopuksi QT GUI Time Sink
+
+![image](https://github.com/user-attachments/assets/5ecba2cc-8ca3-48f0-92ed-56a00dc14961)
+
+Ainiin ja kaikki pitää lisätä työtilaan
+
+Eli Signal Source luo "kompleksisen siniaallon"
+QT GUI Frequency sink näyttää spektrin amplitudin
+QT GUI Time Sink näyttää signaalin käyttäytymisen ajan muodon
+Throttle säätää virtausnopeutta
+
+Yhdistellään ne kuvan mukaisesti Out ja IN
+
+![image](https://github.com/user-attachments/assets/7fc02ae3-998d-439a-8e8f-160abeb48414)
+
+
+
+![image](https://github.com/user-attachments/assets/ab27173b-b709-4d2e-b65b-d08eac48c79c)
+
+
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
 
 Using ‘diff’ in Linux: A Comparison Command Guide, By Gabriel Ramuglia On December 11, 2023, Luettavissa: https://ioflood.com/blog/diff-linux-command/, Luettu: 16/04/2025
