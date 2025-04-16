@@ -148,4 +148,27 @@ Tehdään siis se:
 
 Tämähän on tismalleen sama tiedosto, mitä analysoitiin aikaisemmin? 
 
+![image](https://github.com/user-attachments/assets/866d161b-18e5-4791-9022-5f2b41b2c039)
+
+Jäi vähän hämmentämään tämä lopputulos, joten aloin varmistelemaan sitä eri tavoilla
+
+![image](https://github.com/user-attachments/assets/da0b73ad-62a7-4f72-a8b4-e7f57c42a2ab)
+
+Näyttää siis, että kyseessä sama tiedosto jota analysoitiin aiemmin.
+
+## e) Ultimate. Asenna URH, the Ultimate Radio Hacker.
+[Ohjeen](https://github.com/jopohl/urh?tab=readme-ov-file#Installation) mukaan suositeltu tapa on käyttää pipx, jolla tulee kaikki natiivit laajennukset valmiina. 
+
+Eli ```sudo apt-get install pipx```
+Ja ```pipx install urh```
+Sain kuitenkin virheilmoituksen, ettei sitä voi asentaa.
+
+![image](https://github.com/user-attachments/assets/30c19b6c-f01c-41bf-b745-438a3d717a4e)
+
+Huomasin, että pipx on asennettu valmiiksi, mutta ei "upgraded".
+Käytin siis ```sudo apt-get upgrade```, joka tällä kertaa syystä tai toisesta unohtunut.
+
+
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
+
+Using ‘diff’ in Linux: A Comparison Command Guide, By Gabriel Ramuglia On December 11, 2023, Luettavissa: https://ioflood.com/blog/diff-linux-command/, Luettu: 16/04/2025
