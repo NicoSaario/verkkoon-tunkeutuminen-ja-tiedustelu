@@ -176,6 +176,7 @@ Löysin error - logeista, että Cython puuttuu
 ![image](https://github.com/user-attachments/assets/2ad6b35d-80a1-4053-af98-d021b308c7c5)
 
 ```python3 -m pip install cython```
+Yritin myös ```sudo apt-get install cython3```
 
 ![image](https://github.com/user-attachments/assets/c3439e2d-4c0f-4b92-8df9-3ca8803bd0f8)
 
