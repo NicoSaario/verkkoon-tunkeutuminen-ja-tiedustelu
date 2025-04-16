@@ -248,6 +248,14 @@ Jokainen painallus tekee lisäksi samaa asiaa ja on yhtä pitkä
 ### g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
 
 - Eli yksi pulssi on 1 bitteinä. Sen kesto on 262,00 µs (262,00 mikrosekuntia [Wikipedia](https://en.wikipedia.org/wiki/Microsecond))
+  
+- Ei tullut muuta mieleen, joten tein testin: Kuinka kauan kestää täyttää vesilasi, jonka korkeus on  10cm ja pohjan halkaisija 5.5cm ja yläreunan halkaisija 8cm -> tilavuus n. 3.6 (dl). Laskurina toimi ChatGPT, sillä en siihen jaksanut enää aikaa tuhlata.
+- Testi toimi niin, että laitoin hanan laakista täysille  vesilasin ollessa suunnattuna suoraa suihkun alla, kunnes se oli kokonaan täynnä. Sitten pysäytin sekuntikellon.
+- Eli reaktiovirhemarginaali huomioon ottaen, prosessi kesti noin 1.60s (1.63s kellon mukaan)
+- Tässä taas ChatGPT toimi laskurina ja 1.60s / 262 mikrosekuntia pyöristyy 6106.
+- Yksi aalto ehti siis toistaa itseään 6106 kertaa sinä aikana, kun täysin vesilasia
+
+
 - Voidaan vielä zoomata lähemmäs ja tarkistaa
 
 ![image](https://github.com/user-attachments/assets/12018737-cbd4-47f4-a380-370c7a911ff2)
