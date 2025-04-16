@@ -232,10 +232,10 @@ Kuten näkyy, kesto puolittui:
 
 ![image](https://github.com/user-attachments/assets/e85aa1ba-e609-4abb-b04d-2a65ae937241)
 
+![image](https://github.com/user-attachments/assets/31cc6836-d6cd-4442-9ac7-044d4e5a271e)
 
 Näyte näyttää hyvinkin siltä, joka oli kuvattu - jokainen painallus näkyy omana bittijononaan ja hyvin pitkälti sama rakenne
 
-![image](https://github.com/user-attachments/assets/31cc6836-d6cd-4442-9ac7-044d4e5a271e)
 
 Jokainen painallus tekee lisäksi samaa asiaa ja on yhtä pitkä
 
@@ -247,6 +247,17 @@ Jokainen painallus tekee lisäksi samaa asiaa ja on yhtä pitkä
 
 ### g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
 
+- Eli yksi pulssi on 1 bitteinä. Sen kesto on 262,00 µs (262,00 mikrosekuntia [Wikipedia](https://en.wikipedia.org/wiki/Microsecond))
+- Voidaan vielä zoomata lähemmäs ja tarkistaa
+
+![image](https://github.com/user-attachments/assets/12018737-cbd4-47f4-a380-370c7a911ff2)
+
+Kuten näkee, aallot liikkuvat samassa tahdissa ja samalla taajuudella, kyseessä on ASK - modulaatio, koska bitit 1 ja 0 toimii päälle/pois
+
 Lähteet: Hubacek @hubmartin, 2019, Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs, Katsottavissa:  https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s, Katsottu 15/04/2025
 
 Using ‘diff’ in Linux: A Comparison Command Guide, By Gabriel Ramuglia On December 11, 2023, Luettavissa: https://ioflood.com/blog/diff-linux-command/, Luettu: 16/04/2025
+
+
+Modulation and Different Types of Modulation, March 22, 2024
+By Ravi Teja, Luettavissa: https://www.electronicshub.org/modulation-and-different-types-of-modulation/, Luettu 16/04/2025
