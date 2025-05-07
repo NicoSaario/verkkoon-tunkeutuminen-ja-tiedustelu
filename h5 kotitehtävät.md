@@ -30,6 +30,42 @@ Edit = 07/05/2025 klo 20:00 - Nyt jatkuu tämän kanssa pähkäily, kun on tuo m
 
 Ilmeisesti tätä on hieman hankala testata pelkällä localhostilla ja se vaatii yhteyden verkkoon, joten käyn tutkimassa, josko saisin jonkun palvelimen pystyyn
 
+Hain Namecheapista itselleni halvan domainin ja lähden nyt yrittämään, saanko Evilginxin siihen liitettyä.
+
+Tässä mennään aikataulun vuoksi aika pitkälti ChatGPT:n avustamana, jotta tutkimiseen ei mene turhaa aikaa.
+
+Tein Namecheapissa Domainille seuraavat muutokset -> Advanced DNS -> Debian - koneelta hain IP -  osoitteen ```curl ifconfig.me``` 
+
+Tässä siis käytetty Debianin IP:tä
+
+![image](https://github.com/user-attachments/assets/ae876240-3277-41b7-906d-990923b49523)
+
+En muista, mainitsinko, mutta kävin kopioimassa Evilginxille valmiita phishlettejä tähän kansioon, jotta komennot helpottuu
+
+![image](https://github.com/user-attachments/assets/24fbf42b-60a8-412a-b561-155f5a884399)
+
+Eli ```./evilginx2 -p Evilginx2-Phishlets```, jolloin se lataa ne valmiiksi sisään
+
+Näistä pohjista kiinnosti heti githubin kokeilu
+
+![image](https://github.com/user-attachments/assets/7333c3b2-71c3-4891-8553-c66461816f6a)
+
+Jatketaan harjoituksia 
+
+- Evilillä nyt ```config domain vaintesteille.site```
+- config ip ```debianin ifconfigista saatu ip```
+- Asetettiin siis domain ja IP
+
+- Valitaan profiili, eli se Github
+- ```phishlets hostname github login.vaintesteille.site```
+- ```phishlets enable github```
+
+- Nyt se heitti virheilmoituksen sertifikaateista, koska skippasin sen kohdan kokonaan tarkoituksella. Sen ei pitäisi olla relevantti tähän harjoitukseen
+
+![image](https://github.com/user-attachments/assets/da2a90a4-9e7a-428c-82db-20dffcc69d9f)
+
+
+
 ## b) Sinulla on käytössäsi mininet ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
 
     Kirjoita miten loit mininet ympäristön ja miten toteutit hyökkäyksen.
