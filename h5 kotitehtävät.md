@@ -26,6 +26,9 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 - Asennuksen jälkeen komento ```make```
 - Löin sen vain testimuodossa käyntiin ![image](https://github.com/user-attachments/assets/5136616d-9cd9-461d-97f8-eb538f3a06d7)
 
+Edit = 07/05/2025 klo 20:00 - Nyt jatkuu tämän kanssa pähkäily, kun on tuo mininet saatu hoidettua pois alta
+
+
 
 ## b) Sinulla on käytössäsi mininet ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
 
