@@ -63,4 +63,30 @@ Siellä ne ovat!
 - Tästä oli itseasiassa jo puhetta aikaisemmin, joten lähden selvittelemään, mistä sen saa korjattua
 - Lari oli tehnyt ohjeet sen ratkaisemiseen -> Ajetaan scripti ./get_xauth.sh, josta saadaan haetaan Magic-Cookie ja lyödään seuuraavan komennon perään ```sudo -s xauth add mininet-vm/unix:10```
 - Vaihdoin samalla takaisin SSH - yhteyteen. Ei tuosta mininetin käytöstä tullut mitään VMwaressa
+- Tein kaikki moneen kertaan, mutta xterm herjaa silti "Error: Cannot connect to display"
+- Noh.. tähän hätään sain ChatGPT:ltä ohjeeksi käyttää komentoa ```h1 hping3 -S --flood -p 80 10.0.0.2```, joka kaatoi ruyn tuolta taustalta
 
+- Siinä siis ```h1```suorittaa sen h1 hostilla, ```hping3```on työkalu, jolla lähetetään paketteja käsin,  ```-S``` lähettää SYN-paketteja, ```--flood```lähettää niin nopeasti, kuin mahdollista ja ```-p 80``` tarkoittaa porttia
+- 
+
+![image](https://github.com/user-attachments/assets/107b698b-7588-4e54-915c-78b83bc5f129)
+
+- Tehdään vielä uudelleen ja seurataan, mitä tapahtuu
+
+![image](https://github.com/user-attachments/assets/227d4e2f-b713-409a-9363-8d888da03b50)
+
+- Tässä siis pingit mennyt läpi.
+
+- Ja jälleen floodin jälkeen ruy alhaalla
+
+![image](https://github.com/user-attachments/assets/af3afafb-e7a0-4f70-bb20-8dfe3202fa14)
+
+Sanoisin tässä kohtaa, että testi on onnistunut. Pitää kyllä koittaa vielä säätää tuo Xterm kuntoon jossain kohtaa.
+
+
+## Lähteet
+
+ChatGPT - komentojen analysoijana
+Larin kalvot
+
+How to Perform TCP SYN Flood DoS Attack & Detect it with Wireshark - Kali Linux hping3, firewall.cx, Luettavissa: https://www.firewall.cx/tools-tips-reviews/network-protocol-analyzers/performing-tcp-syn-flood-attack-and-detecting-it-with-wireshark.html, Luettu 07/05/2025
