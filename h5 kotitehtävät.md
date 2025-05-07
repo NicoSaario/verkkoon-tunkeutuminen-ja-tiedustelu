@@ -61,5 +61,6 @@ Siellä ne ovat!
 
 - Törmäsin ongelmaan, jossa en voi käyttää ```xterm h1```, koska "Cannot connect to display". Eli se tarvitsee graafisen käyttöliittymän (?)
 - Tästä oli itseasiassa jo puhetta aikaisemmin, joten lähden selvittelemään, mistä sen saa korjattua
-
+- Lari oli tehnyt ohjeet sen ratkaisemiseen -> Ajetaan scripti ./get_xauth.sh, josta saadaan haetaan Magic-Cookie ja lyödään seuuraavan komennon perään ```sudo -s xauth add mininet-vm/unix:10```
+- Vaihdoin samalla takaisin SSH - yhteyteen. Ei tuosta mininetin käytöstä tullut mitään VMwaressa
 
