@@ -70,7 +70,7 @@ nslookup näyttää kyllä jotain, mutta sivulle ei vieläkään pääse
 
 ![image](https://github.com/user-attachments/assets/24da8cbb-62cc-4bf9-a424-dfec01630b27)
 
-Yritin vaihtaa phishlettiä Reddittiin ja siinähän kävi sitten niin, että yritin uudelleen certin asennusta ja päädyin nähtävästi estolistalle 
+Yritin vaihtaa phishlettiä Reddittiin ja siinähän kävi sitten niin, että yritin uudelleen certin asennusta ja päädyin nähtävästi estolistalle/jäähylle hetkeksi
 
 ![image](https://github.com/user-attachments/assets/6e854259-6701-4183-919d-45f708d61478)
 
