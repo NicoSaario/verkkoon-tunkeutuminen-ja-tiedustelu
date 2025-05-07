@@ -1,3 +1,18 @@
+# Kotitehtävät 
+
+Kotitehtävät ovat kurssilta "Verkkoon Tunkeutuminen ja Tiedustelu - Network Attacks and Reconnaissance" ja löytyvät osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#verkkojen-perusteet 
+
+- Nämä tehtävät suoraan Lari Iso-Anttilalta https://github.com/lisoant
+
+Kotitehtävät on tehty Windows 11 - Home - käyttöjärjestelmällä, päivitykset ajettu 07/05/2025 asti.
+
+AMD Ryzen 5 4500U, RAM 8 Gt.
+
+Aika: Itä-Euroopan normaaliaika Aikavyöhyke: Suomi (UTC+3) 07/05/2025 (pvm/kk/v)
+
+Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point release live image (2025.1a)
+- Tässä myös Debian 12 Bookworm, koska tuo Kali ajoi hetkeksi sopimuksen irti
+
 a) Tutustu seuraavaan työkaluun
 
     https://github.com/kgretzky/evilginx2
