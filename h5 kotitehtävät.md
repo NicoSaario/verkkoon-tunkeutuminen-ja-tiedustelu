@@ -60,5 +60,6 @@ Siellä ne ovat!
 ![image](https://github.com/user-attachments/assets/e7ae362e-72bd-413f-8ebe-e948eba1a8ed)
 
 - Törmäsin ongelmaan, jossa en voi käyttää ```xterm h1```, koska "Cannot connect to display". Eli se tarvitsee graafisen käyttöliittymän (?)
+- Tästä oli itseasiassa jo puhetta aikaisemmin, joten lähden selvittelemään, mistä sen saa korjattua
 
 
