@@ -41,5 +41,7 @@ Ensin piti saada labrakansiot imuroitua mininettiin hostilta:
 
 Siellä ne ovat!
 
-
-
+- Aloitetaan. Käytän tässä lisoantin kalvoa ja ChatGPT varmistamaan komentojen tarkoituksen
+- Ensimmäisenä käynnistetään verkko-ohjain ja mininet. Tässä käytetään siis Mininetin omaa topologiaa eikä ole yhteyksiä ulkopuolelle ```ruy-manager ruy.app.simple_switch_13``` ```sudo mn --topo single,3 --mac --switch ovsk --controller remote```
+- Sitä ennen pitääkin ajaa ```sudo loadkeys fi```, jotta saan näppäimistöasettelun oikeaksi
+- Tota ruy-manager - komentoa ei ilmeisesti tarvitse ajaa. 
