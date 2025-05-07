@@ -122,6 +122,17 @@ Siellä ne ovat!
 
 Sanoisin tässä kohtaa, että testi on onnistunut. Pitää kyllä koittaa vielä säätää tuo Xterm kuntoon jossain kohtaa.
 
+Olen tässä yrittänyt selvitellä ongelmia, kun ei tuo sivusto suostu aukeamaan -> palomuuriasetukset, asentanut certin, dns utilityt ja käynnistellyt eviliä uudelleen ja uudelleen.
+
+nslookup näyttää kyllä jotain, mutta sivulle ei vieläkään pääse
+
+![image](https://github.com/user-attachments/assets/24da8cbb-62cc-4bf9-a424-dfec01630b27)
+
+Yritin vaihtaa phishlettiä Reddittiin ja siinähän kävi sitten niin, että yritin uudelleen certin asennusta ja päädyin nähtävästi estolistalle 
+
+![image](https://github.com/user-attachments/assets/6e854259-6701-4183-919d-45f708d61478)
+
+
 
 ## Lähteet
 
