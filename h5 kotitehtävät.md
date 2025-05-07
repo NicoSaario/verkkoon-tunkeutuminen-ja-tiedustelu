@@ -26,4 +26,20 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 - Asennuksen jälkeen komento ```make```
 - Löin sen vain testimuodossa käyntiin ![image](https://github.com/user-attachments/assets/5136616d-9cd9-461d-97f8-eb538f3a06d7)
 
-  
+
+## b) Sinulla on käytössäsi mininet ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
+
+    Kirjoita miten loit mininet ympäristön ja miten toteutit hyökkäyksen.
+Olin siis ladannut jo virtuaalikoneen ja luonut aloitusympäristön ennen tunnin aloitusta.
+
+
+Ensin piti saada labrakansiot imuroitua mininettiin hostilta:
+- Käytin Git Bashia Windowsilla ja otin ssh - yhteyden mininettiin ```ssh mininet@-ip-```
+- Kun SSH oli otettu, avasin uuden terminaalin, menin hakemistoon, jossa nuo "labs" sijaitsevat ja käytin komentoa ```scp labs mininet@-ip-:/home/mininet/Downloads```
+
+![image](https://github.com/user-attachments/assets/f82b5b24-b3bb-4005-8937-e9415007def0)
+
+Siellä ne ovat!
+
+
+
