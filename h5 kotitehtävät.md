@@ -87,6 +87,9 @@ Sanoisin t채ss채 kohtaa, ett채 testi on onnistunut. Pit채채 kyll채 koittaa viel�
 ## L채hteet
 
 ChatGPT - komentojen analysoijana
+
 Larin kalvot
 
 How to Perform TCP SYN Flood DoS Attack & Detect it with Wireshark - Kali Linux hping3, firewall.cx, Luettavissa: https://www.firewall.cx/tools-tips-reviews/network-protocol-analyzers/performing-tcp-syn-flood-attack-and-detecting-it-with-wireshark.html, Luettu 07/05/2025
+
+Getting Started, Evilginx Documentation, Evilginx, Luettavissa: https://help.evilginx.com/category/getting-started, Luettu 07/05/2025
