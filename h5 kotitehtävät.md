@@ -74,8 +74,7 @@ Yritin vaihtaa phishlettiä Reddittiin ja siinähän kävi sitten niin, että yr
 
 ![image](https://github.com/user-attachments/assets/6e854259-6701-4183-919d-45f708d61478)
 
-
-
+Tuntuu, että olin äärimmäisen lähellä onnistumista. Palaan tähän varmasti myöhemmin!
 
 
 ## b) Sinulla on käytössäsi mininet ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
