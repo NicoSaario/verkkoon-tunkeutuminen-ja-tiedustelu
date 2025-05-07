@@ -44,4 +44,19 @@ Siellä ne ovat!
 - Aloitetaan. Käytän tässä lisoantin kalvoa ja ChatGPT varmistamaan komentojen tarkoituksen
 - Ensimmäisenä käynnistetään verkko-ohjain ja mininet. Tässä käytetään siis Mininetin omaa topologiaa eikä ole yhteyksiä ulkopuolelle ```ruy-manager ruy.app.simple_switch_13``` ```sudo mn --topo single,3 --mac --switch ovsk --controller remote```
 - Sitä ennen pitääkin ajaa ```sudo loadkeys fi```, jotta saan näppäimistöasettelun oikeaksi
-- Tota ruy-manager - komentoa ei ilmeisesti tarvitse ajaa. 
+- Hetken piti ihmetellä, että miten ihmeessä saan toisen terminaalin auki, kun nyt on vain näkyvissä tämä
+
+![image](https://github.com/user-attachments/assets/a061233c-723d-4595-b723-7c668798a574)
+
+- Naputtelin kaikkia nappeja vuoron perään ja lopputuloksena ```Ctrl + Alt + F2``` avaa uuden ja vastaavasti ```Ctrl + Alt + F1```palauttaa takaisin
+- Hyvä esimerkki siitä, ettei kannata yrittää tehdä demon perässä juttuja, vaan katsoa, kuunnella ja tehdä muistiinpanoja
+- Nyt suoritettiin tuo seuraava komento
+
+![image](https://github.com/user-attachments/assets/b4d54c31-54f0-40da-adf2-806047682eb3)
+
+- Ilman tuota ruy-manager - komentoa kaikki pingit dropattiin
+- Se on siis esimerkkisovellus, joka käyttäytyy Ethernet-kytkimen tapaan (ChatGPT)
+
+![image](https://github.com/user-attachments/assets/e7ae362e-72bd-413f-8ebe-e948eba1a8ed)
+
+
