@@ -28,7 +28,7 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 Edit = 07/05/2025 klo 20:00 - Nyt jatkuu tämän kanssa pähkäily, kun on tuo mininet saatu hoidettua pois alta
 
-
+Ilmeisesti tätä on hieman hankala testata pelkällä localhostilla ja se vaatii yhteyden verkkoon, joten käyn tutkimassa, josko saisin jonkun palvelimen pystyyn
 
 ## b) Sinulla on käytössäsi mininet ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
 
