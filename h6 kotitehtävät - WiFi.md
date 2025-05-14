@@ -41,7 +41,7 @@ Sen piilottaminen tekee siis seuraavaa -> Kyllä. Se tosiaan on "piilossa". Miks
     - Loogisesti ajateltuna: Piilotettu ID = Piilossa 
     - Todellisuudessa 'Hei Maailma! Täällä puhelin ja sen MAC - osoite, onko KotiverkkoJonkaPitiOllaPiilossa täällä?!'
     
-    - Se johtaa siihen, että ensinnäkin se tekee kohteesta kiinnostavamman, massasta poikkeavan ja jokainen sniffailija tietää, että kotoa tai töistä löytyy piiloitettu verkko... jonka senkin saa selville hetkessä.
+    - Se johtaa siihen, että ensinnäkin se tekee kohteesta kiinnostavamman, massasta poikkeavan ja jokainen sniffailija tietää, että kotoa tai töistä löytyy piiloitettu verkko... jonka senkin saa selville hetkessä. Mahdollistaa myös kohteen seuraamisen ja tunnistamisen.
     
     - Käytännössä siis hankaloitin elämääni muutaman vuoden vain sen takia, etten lukenut aiheesta ja tein olettamuksia. 
 
