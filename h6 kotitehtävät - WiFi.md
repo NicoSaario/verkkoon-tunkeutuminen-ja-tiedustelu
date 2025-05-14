@@ -46,7 +46,7 @@ WLANin turvallisuus on mietityttänyt aina. Vaatiihan se hieman motivaatiota sel
 - Lähes joka kodista löytyy jonkin asteinen reititin. Niiden turvallisuudesta on puhuttu vuosikausia ja pyritty ohjeistamaan ihmisiä niiden konfiguraatioissa - jopa turhaan.
 - Tavallinen käyttäjä (kuten itse olin), kytkee kiinni - katsoo, toimiiko netti - jos ei toimi, tekee vain vaaditut toimenpiteet ja unohtaa sen olemassaolon siihen asti, kunnes verkossa tulee jokin ongelma.
 
-Nyt, kun on konkreettisesti nähnyt, miten pienellä vaivalla saa paljon tavaraa ulos asiasta, jonka kanssa on päivittäin tekemisissä ja joka käytännössä ohjaa päivittäitä toimintaa - on kyllä todettava, että turvallisuutta pitää parantaa ja ottaa aidosti enemmän selvää siitä, miten se tehdään.
+Nyt, kun on konkreettisesti nähnyt, miten pienellä vaivalla saa paljon tavaraa ulos asiasta, jonka kanssa on päivittäin tekemisissä ja joka käytännössä ohjaa päivittäistä toimintaa sekä mahdollistaa pääsyn laitteille - on kyllä todettava, että turvallisuutta pitää parantaa ja ottaa aidosti enemmän selvää siitä, miten se tehdään.
 Siitä kyllä saa *turvallisemman*, mutta en usko siihen, että siitä ikinä täysin turvallista tulee. Aina on jokin reikä, johon joku hiiri kaivautuu.
 
 Nyt onkin kesä aikaa parantaa omaa osaamista ja kehittää sen turvallisuutta.
