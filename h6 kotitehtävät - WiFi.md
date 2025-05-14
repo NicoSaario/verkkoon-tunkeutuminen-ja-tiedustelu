@@ -26,20 +26,21 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 - Yritin jatkaa siitä vielä eteenpäin, mutta opin parhaiten tutkimalla ja tekemällä - en walkthrough - ohjetta seuraamalla, joten teen niitä hiljalleen.
 
 ### b) Kirjoita raportti siitä mitä opit ja mitkä asia yllättivät sinut kun tutustuit harjoitukseen.
--
+
 - - Aircrack - ng - työkalut tuli itselle kokonaan uusina käyttöön. Niin tehtävässä, kun aikaisemmassa livedemossa näkyy hyvin niiden työkalujen merkityksen ja sen, mitä kaikkea pienellä vaivalla voikaan saada selville. Yllätyin aidosti siitä, kuinka paljon pienellä vaivalla voi saada irti pelkästä "suojatusta" liikenteestä.
 - Isoin yllätys oli ESSID löytyminen noinkin helposti. Olen itse asiassa aina välillä miettinyt sitä, kuinka saisi selville kaikki ne piilotetut verkot, joita ympäriltä löytyy. Ja tämän johdosta ajauduin hetkeksi kuoppaan, jota kaivoin syvemmälle ja syvemmälle. Tästä lisää seuraavassa tehtävässä.
 
 ### c) Miten suhtautumisesi WLanin turvallisuuteen muuttui sen jälkeen kun teit harjoitukset?
 
-- Ennen tälle alalle lähtemistä, olin aina kiinnostunut IoT - laitteista, niiden toiminnasta ja kiinnitin tavallista enemmän yksityisyyteen huomiota, vaikkakin aina en siihen tehnyt tarvittavia toimia.
+Ennen tälle alalle lähtemistä, olin aina kiinnostunut IoT - laitteista, niiden toiminnasta ja kiinnitin tavallista enemmän yksityisyyteen huomiota, vaikkakin aina en siihen tehnyt tarvittavia toimia.
 - Tähän liittyen käytin kotiverkoissa piiloitettua SSID:tä - Kuvittelin "Jes! Se on piilossa - yksi turvakerros lisää".
 - Tuosta syvästä kuopasta - Lähdin vihdoin selvittämään tehtävän jälkeen, mitä se oikeasti tekee ja onko siitä sitten mitään hyötyä. Löysin artikkeleita puolesta ja vastaan, mutta lopulta lopputulos oli sitä, mitä en todellakaan toivonut vaikkakin se nyt näyttää näin jälkeenpäin tutkittuna hyvinkin loogiselta.
-- Sen piilottaminen tekee siis seuraavaa -> Kyllä. Se tosiaan on "piilossa". Miksi se ei ole hyvä juttu? Jos verkkoon on kytkenyt vaikkapa älypuhelimen - se lähettää jatkuvia kyselyitä (probe request) siitä, onko verkko a se piilotettu kotiverkko vai ei -> *Missä* tahansa kantaman ulkopuolella *kuka* tahansa verkkojen skannaaja näkee siis, että teet jatkuvia kyselyitä siitä, onko se piilotettu verkko lähellä vai ei
-- Se johtaa siihen, että ensinnäkin se tekee kohteesta kiinnostavamman, massasta poikkeavan ja jokainen sniffailija tietää, että kotoa tai töistä löytyy piiloitettu verkko... jonka senkin saa selville hetkessä.
-- Käytännössä siis hankaloitin elämääni muutaman vuoden vain sen takia, etten lukenut aiheesta ja tein olettamuksia. 
 
-- WLANin turvallisuus on mietityttänyt aina. Vaatiihan se hieman motivaatiota selvittää sen turvallisuuden heikentämistä, mutta näin muutaman hakukonekäytön jälkeen ja laajalla kirjolla työkaluja, on se lähtökohtaisesti todella helppo murtaa heikoilla salauksilla.
+Sen piilottaminen tekee siis seuraavaa -> Kyllä. Se tosiaan on "piilossa". Miksi se ei ole hyvä juttu? Jos verkkoon on kytkenyt vaikkapa älypuhelimen - se lähettää jatkuvia kyselyitä (probe request) siitä, onko verkko a se piilotettu kotiverkko vai ei -> *Missä* tahansa kantaman ulkopuolella *kuka* tahansa verkkojen skannaaja näkee siis, että teet jatkuvia kyselyitä siitä, onko se piilotettu verkko lähellä vai ei
+    - Se johtaa siihen, että ensinnäkin se tekee kohteesta kiinnostavamman, massasta poikkeavan ja jokainen sniffailija tietää, että kotoa tai töistä löytyy piiloitettu verkko... jonka senkin saa selville hetkessä.
+    - Käytännössä siis hankaloitin elämääni muutaman vuoden vain sen takia, etten lukenut aiheesta ja tein olettamuksia. 
+
+WLANin turvallisuus on mietityttänyt aina. Vaatiihan se hieman motivaatiota selvittää sen turvallisuuden heikentämistä, mutta näin muutaman hakukonekäytön jälkeen ja laajalla kirjolla työkaluja, on se lähtökohtaisesti todella helppo murtaa heikoilla salauksilla.
 - Lähes joka kodista löytyy jonkin asteinen reititin. Niiden turvallisuudesta on puhuttu vuosikausia ja pyritty ohjeistamaan ihmisiä niiden konfiguraatioissa - jopa turhaan.
 - Tavallinen käyttäjä (kuten itse olin), kytkee kiinni - katsoo, toimiiko netti - jos ei toimi, tekee vain vaaditut toimenpiteet ja unohtaa sen olemassaolon siihen asti, kunnes verkossa tulee jokin ongelma.
 
