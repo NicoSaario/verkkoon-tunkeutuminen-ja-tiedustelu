@@ -8,7 +8,7 @@ Kotitehtävät on tehty Windows 11 - Home - käyttöjärjestelmällä, päivityk
 
 AMD Ryzen 5 4500U, RAM 8 Gt.
 
-Aika: Itä-Euroopan normaaliaika Aikavyöhyke: Suomi (UTC+3) 07/05/2025 (pvm/kk/v)
+Aika: Itä-Euroopan normaaliaika Aikavyöhyke: Suomi (UTC+3) 14/05/2025 (pvm/kk/v)
 
 Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point release live image (2025.1a)
 - Tässä tehtävässä [WiFiChallenge-Virtuaalikone](https://lab.wifichallenge.com/) Oracle VM - kautta
