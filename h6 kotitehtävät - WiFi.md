@@ -37,7 +37,9 @@ Ennen tälle alalle lähtemistä, olin aina kiinnostunut IoT - laitteista, niide
 - Tuosta syvästä kuopasta - Lähdin vihdoin selvittämään tehtävän jälkeen, mitä se oikeasti tekee ja onko siitä sitten mitään hyötyä. Löysin artikkeleita puolesta ja vastaan, mutta lopulta lopputulos oli sitä, mitä en todellakaan toivonut vaikkakin se nyt näyttää näin jälkeenpäin tutkittuna hyvinkin loogiselta.
 
 Sen piilottaminen tekee siis seuraavaa -> Kyllä. Se tosiaan on "piilossa". Miksi se ei ole hyvä juttu? Jos verkkoon on kytkenyt vaikkapa älypuhelimen - se lähettää jatkuvia kyselyitä (probe request) siitä, onko verkko a se piilotettu kotiverkko vai ei -> *Missä* tahansa kantaman ulkopuolella *kuka* tahansa verkkojen skannaaja näkee siis, että teet jatkuvia kyselyitä siitä, onko se piilotettu verkko lähellä vai ei
+   
     - Se johtaa siihen, että ensinnäkin se tekee kohteesta kiinnostavamman, massasta poikkeavan ja jokainen sniffailija tietää, että kotoa tai töistä löytyy piiloitettu verkko... jonka senkin saa selville hetkessä.
+    
     - Käytännössä siis hankaloitin elämääni muutaman vuoden vain sen takia, etten lukenut aiheesta ja tein olettamuksia. 
 
 WLANin turvallisuus on mietityttänyt aina. Vaatiihan se hieman motivaatiota selvittää sen turvallisuuden heikentämistä, mutta näin muutaman hakukonekäytön jälkeen ja laajalla kirjolla työkaluja, on se lähtökohtaisesti todella helppo murtaa heikoilla salauksilla.
