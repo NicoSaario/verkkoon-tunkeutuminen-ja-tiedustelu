@@ -1,5 +1,7 @@
 # Kotitehtävät 
 
+
+848002000000
 Kotitehtävät ovat kurssilta "Verkkoon Tunkeutuminen ja Tiedustelu - Network Attacks and Reconnaissance" ja löytyvät osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#verkkojen-perusteet 
 
 - Nämä tehtävät suoraan Lari Iso-Anttilalta https://github.com/lisoant
